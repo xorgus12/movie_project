@@ -1,0 +1,453 @@
+
+#main-menu{
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main_back{
+  display: flex;
+}
+.title_hr{
+    background-color: white;
+    opacity: 30%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 119px;
+}
+.box_case{
+    position: relative;
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    
+}
+.title{
+    font-size: 2rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title_name{
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+.title_right{
+    font-size: 14px;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 50%;
+    left: 80%;
+    width: 200px;
+    transform: translateY(-50%);
+    letter-spacing: 1px;
+}
+.login_link{
+    position: relative;
+    left: 4%;
+    width: 70px;
+}
+.drop_down_maincase{
+    position: relative;
+    display: flex;
+    padding: 5px;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+        text-align: center;
+}
+.black_box{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 9;
+    position: relative;
+}
+#main-menu > li {
+  
+  float: left;
+  position: relative;
+  margin-left: 49px;
+  margin-right: 49px;
+}
+
+#main-menu > li > a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 14px 36px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#main-menu > li:nth-child(1) > a {
+  border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+  position: absolute;
+  background: #000000;
+  width: 200%;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+  list-style: none;
+
+  list-style: none;
+  padding-left: 0px;
+
+}
+
+#sub-menu > li {
+  padding: 16px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  z-index: 9;
+
+}
+#sub-menu > li >  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  z-index: 9;
+}
+
+#main-menu > li:hover #sub-menu {
+
+  visibility: visible;
+  z-index: 9;
+}
+a:hover {
+    color: white;
+  }
+a{
+    color: white;
+}
+
+
+/*여기까지 기본 위 배너 css입니다!*/
+.top_photo{
+  height: 700px;
+    width: 100%;
+    background-image: url(../img/mainpage/movie_main\ 수정.jpg);
+    position: relative;
+    opacity: 0.7;
+    z-index: 2;
+}
+.top_box{
+  height: 900px;
+  width: 100%;
+  /* background-image: url("../img/movie_main\ 수정.jpg"); */
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+.top_movie_name{
+  position: relative;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 47px;
+    letter-spacing: -2px;
+    line-height: 53px;
+    top: -600px;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+}
+.top_movie_grade{
+  position: relative;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -2px;
+    line-height: 53px;
+    top: -600px;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+  margin-top: 16px;
+}
+/* 이후론 복붙입니다 */
+/*카드 플립*/
+.flip-card-front {box-shadow:1px 0 7px 0 rgba(0,0,0,.2);}
+.flip-card-back {position: relative;box-shadow:1px 0 10px 0 rgba(0,0,0,0);}
+.flip-card-back::before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;display:block;background:rgba(0,0,0,.7);z-index:1;}
+
+.flip-card .rl_info_box {position:absolute;top:0;bottom:0;left:0;right:0;padding:0px;z-index: 2;color:#fff;line-height:1;}
+.flip-card .rl_info_box .rank_num {margin-bottom:39px;font-size:24px;font-weight:bold;font-family:nanumEB,'맑은 고딕','Malgun Gothic','Helvetica','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif ;text-align: left; width:45px; height:40px; background:url(//movie-img.yes24.com/NYes24/new/all_sprite.png) no-repeat -493px -629px; padding:5px; text-align:center; letter-spacing:-1px;}
+.flip-card .rl_info_box .btn_rank_st {margin:0 0 5px 0;padding-top:15px;display:block;width:100px;height:45px;border:1px solid rgba(255,255,255,.6);font-size:14px;color:#fff;text-align: center;background:rgba(0,0,0,.4);}
+.flip-card .rl_info_box a.btn_rank_st:hover {color:#ec6159; border:1px solid #ec6159;}
+.flip-card .rl_info_box .rl_btn_box {position:absolute;top:50%;left:50%;transform: translate3d(-50%, -50%,0);}
+
+/* 플립 카드 형태 */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    -ms-perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.flip-card-inner img {width:100%;}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    transition: transform 0.6s;
+    -ms-transition: transform 0.6s;
+    transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden
+}
+.flip-card-front {
+    z-index: 2;
+}
+.flip-card-back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.flip-card:hover .flip-card-back, .flip-card.hover .flip-card-back {transform: rotateY(0deg);}
+.flip-card:hover .flip-card-front, .flip-card.hover .flip-card-front {transform: rotateY(180deg);}
+.lt-ie9 .flip-card:hover .flip-card-front, .lt-ie9 .flip-card.hover .flip-card-front {display:none;}
+
+.mb_swiper .reserve_rank .rank_view {opacity:0;transition: opacity 1s;}
+.mb_swiper .slick-active .reserve_rank .rank_view {opacity:1;transition: opacity 1s;}
+.rank_view {position: absolute;top: 61%;left: 50%;right: 0px;transform: translateX(-50%);z-index: 10;width: 1000px;}
+.rank_view .flip-card {width:130px;height:186px;}
+.clear:after {content:'';display:block;clear: both;}
+.rank_list{display: flex; width: 100%; justify-content: space-around}
+/* 준혁 파트 */
+
+
+.event_box{
+  height: 1300px;
+  width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,3%);
+}
+.event_event{
+  float: left;
+  font-weight: 700;
+}
+.event_most{
+  display: inline-block;
+  color: #666666;
+  position:absolute;
+  font-size: 12px;
+  left:900px;
+  top:15px
+}
+.event_border{
+  display: inline-block;
+  top: 30px;
+  bottom: 55px; 
+}
+.event_ticket{
+  float: left;
+  width: 465px;
+  height: 315px;
+  border-radius: 30px;
+  /* background-color: #666666;    */
+  right: 15px;
+  background-image:url(../img/mainpage/티켓이벤트.jpg);
+}
+.event_ing{
+  position: relative;
+  display: inline-block;
+  width: 465px;
+  height: 315px;
+  border-radius: 30px;
+  /* background-color: #666666;    */
+  left: 60px;
+  background-image: url(../img/mainpage/진행중인\ 이벤트2.jpg);
+}
+.event_ticket_letter{
+  position: relative;
+  top: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  left: 30px;
+}
+.event_ticket_letter2{
+  position: relative;
+  color: white;
+  font-size: 18px;
+  top: 20px;
+  font-weight: 700;
+  left:30px;
+}
+.announcement{
+  position: relative;
+  float: left;
+  top: 150px;
+  height: 260px;
+  width: 480px;
+  left: 20px;
+}
+.announcement_letter{
+  font-size: 16px;
+  font-weight: 700;
+}
+.announcement_letter2{
+  float: left;
+  position: relative;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.qna{
+  position: relative;
+  display: inline-block;
+  top: 150px;
+  font-size: 16px;
+  font-weight: 700;
+  left: 50px;
+}
+.qna_letter2{
+  font-size: 14px;
+}
+.Box_tool{
+  position: relative;
+  top: 270px;
+  right: 45%;
+  width: 1431px;
+  height: 180px;
+}
+.movie_ranking{
+  position: relative;
+  left: 20px;
+  float: left;
+  width: 180px;
+  height: 180px;
+  background-image: url(../img/mainpage/영화순위.jpg);
+}
+.ticketing{
+  position: relative;
+  margin-left: 77px;
+  float: left;
+  width: 180px;
+  height: 180px;
+  background-image: url(../img/mainpage/예매.jpg);
+}
+.service_center{
+  position: relative;
+  margin-left: 77px;
+  float: left;
+  width: 180px;
+  height: 180px;
+  background-image: url(../img/mainpage/고객센터.jpg);
+}
+.mypage{
+  position: relative;
+  margin-left: 77px;
+  float: left;
+  width: 180px;
+  height: 180px;
+  background-image: url(../img/mainpage/마이페이지.jpg);
+}
+
+
+/* 바텀주석 */
+.bottom_text_1 {
+  position: relative;
+  color: white;
+  font-size: 1.92rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 800;
+  left: 45px;
+}
+
+.bottom_text_2 {
+  position: relative;
+  color: #a0a0a0;
+  font-size: 0.72rem;
+  text-align: left;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  top: 10px;
+  left: 45px;
+}
+
+.bottom_text_3 {
+  position: relative;
+  color: #666666;
+  font-size: 0.72rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 500;
+  top: 6.3rem;
+  left: 45px;
+}
+
+.bottom_text_4 {
+  position: relative;
+  color: #a6a6a6;
+  font-size: 0.96rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 500;
+  top: 9rem;
+  left: 45px;
+}
+.lhr5 {
+  position: relative;
+  background-color: #6c6c6c;
+  border: 0;
+  opacity: 100;
+  top: 150px;
+}
+.inner_case_bottom {
+  position: absolute;
+  height: 85%;
+  width: 62.5rem;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
+}
+.bottom {
+  position: relative;
+  background-color: #333333;
+  width: 100%;
+  height: 25rem;
+
+}

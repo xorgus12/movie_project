@@ -1,0 +1,550 @@
+@charset "UTF-8";
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding: 0px;
+  color: #000;
+}
+a:hover {
+  color: black;
+}
+.main_back{
+  display: flex;
+}
+a {
+   text-decoration: none;
+} 
+#main-menu{
+  list-style: none;
+  padding-left: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box_case{
+  position: relative;
+  height: 125px;
+  width: 100%;
+  background-color: white;
+  
+}
+.title{
+  font-size: 2rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title_name{
+  position: relative;
+  left: 10px;
+  top: 4px;
+}
+.title_right{
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 80%;
+  width: 200px;
+  transform: translateY(-50%);
+  letter-spacing: 1px;
+}
+.login_link{
+  position: relative;
+  left: 4%;
+  width: 70px;
+}
+.drop_down_maincase{
+  position: relative;
+  display: flex;
+  padding: 5px;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+      text-align: center;
+}
+.black_box{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 9;
+  position: relative;
+}
+#main-menu > li {
+float: left;
+position: relative;
+margin-left: 49px;
+margin-right: 49px;
+}
+
+#main-menu > li > a {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.85);
+text-align: center;
+text-decoration: none;
+letter-spacing: 0.05em;
+display: block;
+padding: 14px 36px;
+border-right: 1px solid rgba(0,0,0,0.15);
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#main-menu > li:nth-child(1) > a {
+border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+position: absolute;
+background: #000000;
+width: 200%;
+visibility: hidden;
+transition: all 0.15s ease-in;
+}
+
+#sub-menu > li {
+padding: 16px 28px;
+border-bottom: 1px solid rgba(0,0,0,0.15);
+z-index: 9;
+}
+#sub-menu > li >  a {
+color: rgba(255,255,255,0.6);
+text-decoration: none;
+z-index: 9;
+}
+
+#main-menu > li:hover #sub-menu {
+opacity: 1;
+visibility: visible;
+z-index: 9;
+}
+
+
+section {
+column-width: 15em;
+padding: 2em 12em;
+}
+/*여기까지 기본 위 배너 css입니다!*/
+/* bottom */
+/* 최하단 css */
+.bottom {
+    position: relative;
+    background-color: #333333;
+    z-index: 3;
+    width: 100%;
+    height: 25rem;
+  
+  }
+  .inner_case_bottom {
+    position: absolute;
+    height: 85%;
+    width: 62.5rem;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+  }
+  .lhr5 {
+    position: relative;
+    background-color: #6c6c6c;
+    opacity: 0.3;
+    top: 150px;
+    z-index: 4;
+  }
+  
+  
+  .bottom_text_1 {
+    position: relative;
+    color: white;
+    font-size: 1.92rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    top: px;
+    left: 45px;
+  }
+  
+  .bottom_text_2 {
+    position: relative;
+    color: #a0a0a0;
+    font-size: 0.72rem;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    top: 10px;
+    left: 45px;
+  }
+  
+  .bottom_text_3 {
+    position: relative;
+    color: #666666;
+    font-size: 0.72rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 6.3rem;
+    left: 45px;
+  }
+  
+  .bottom_text_4 {
+    position: relative;
+    color: #a6a6a6;
+    font-size: 0.96rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 9rem;
+    left: 45px;
+  }
+  /* bottom */
+
+.gray_box{
+  width: 100%;
+  height: 1350px;
+  background-color: gray;
+}
+.ticketing_box{
+  width: 1080px;
+  height: 850px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* 티켓통 */
+.ticket_check_box{
+  position: relative;
+  height: 180px;
+  width: 1080px;
+  background-color: white;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.movie_poster{
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.check_com{
+  position: relative;
+  top: 30px;
+  left: 80px;
+  height: 150px;
+  width: 300px;
+}
+.ticketing_name{
+  position: relative;
+  top: 4%;
+  left: 46.67%;
+  font-size: 20px;
+  color: white;
+  width: 10%;
+  font-weight: 600;
+}
+/*티켓통 하단*/
+.tic_top{
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 27%;
+  display: flex;
+}
+.movie_checking{
+  border-right: 1px solid gray;
+  width: 100%;
+  height: 27%;
+}
+.person_check{
+  width: 360px;
+  height: 100%;
+  border-right: 1px solid grey;
+
+}
+.movie_checking{
+  width: 360px;
+  height: 100%;
+}
+.sit_check{
+  width: 360px;
+  height: 100%;
+}
+
+.sit_img{
+  width: 100%;
+  height: 175px;
+  display: flex;
+}
+.sit_screen{
+  background-image: url(../img/ticket_sit/screen.png);
+  width: 600px;
+  height: 100px;
+  object-fit: contain;
+  position: relative;
+  top: 25%;
+  left: 22%;
+}
+.sit_return{
+  background-image: url(../img/ticket_sit/spin_arrow.png);
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  position: relative;
+  top: 15%;
+  left: 38%;
+}
+.mod_center{
+  height: 63%;
+  width: 100%;
+  background-color: black;
+  opacity: 9%;
+}
+.sit_checkbox{
+  width: 100%;
+  height: 300px;
+  padding: 0px 107px
+  
+}
+.sit_list_garo{
+  display: flex;
+}
+.sit_a{
+  width: 17px;
+  height: 17px;
+  background: #848484;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 10px;
+  padding-left: 3.5px;
+  padding-top: 1px;
+}
+.sit_a:hover{
+  background: red;
+}
+.sit_b{
+  width: 17px;
+  height: 17px;
+  background: red;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 10px;
+  padding-left: 3.5px;
+  padding-top: 1px;
+}
+.sit_c{
+  width: 17px;
+  height: 17px;
+  background: #848484 url("../img/ticket_sit/sit_stop.png");
+  border-radius: 5px 5px 0 0;
+  color: #848484;
+  text-indent: -9999px;
+  font-size: 10px;
+  padding-left: 3.5px;
+  padding-top: 1px;
+}
+.sit_bottom{
+  display: flex;
+  border-top: 1px solid gray;
+  position: relative;
+}
+.category{
+  display: flex;
+  width: 600px;
+  position: relative;
+  top: 29px;
+  left: 27px;
+}
+.sit_bottom_category{
+  position: relative;
+  bottom: 2px;
+  padding: 0px 7px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.sit_info{
+  font-weight: 300;
+}
+.adult{
+  display: flex;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10%;
+
+}
+.adult_text{
+  width: 50px;
+  text-align: center;
+}
+.adult_button{
+  position: relative;
+  left: 10%;
+}
+.teenager{
+  display: flex;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+.teenager_text{
+  width: 50px;
+  text-align: center;
+}
+.teenager_button{
+  position: relative;
+  left: 10%;
+}
+.aud_but{
+  border: 0;
+  outline: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1px 6px;
+  opacity: 50%;
+}
+.aud_but:hover{
+  background-color: red;
+  opacity: 100%;
+}
+.ten_but{
+  border: 0;
+  outline: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1px 6px;
+  opacity: 50%;
+}
+.ten_but:hover{
+  background-color: red;
+  opacity: 100%;
+}
+.movie_info{
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-weight: 600;
+}
+.movie_name{
+  position: relative;
+  top: 44%;
+  transform: translateY(-50%);
+  left: 10%;
+  opacity: 60%;
+}
+.movie_time{
+  position: relative;
+  top: 44%;
+  transform: translateY(-50%);
+  left: 10%;
+  opacity: 60%;
+}
+.sit_text{
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10%;
+  font-weight: 600;
+  width: 200px;
+}
+.sit_info{
+  position: relative;
+  top: 44%;
+  transform: translateY(-50%);
+  left: 10%;
+  opacity: 60%;
+  width: 200px;
+}
+.sit_infomation{
+  position: relative;
+  transform: translate(48px, 17px);
+  font-weight: 300;
+  font-size: 14px;
+}
+.sit_aph{
+  position: absolute;
+  font-size: 10.7px;
+  text-align: center;
+  font-weight: 600;
+  left: 68px;
+}
+.sit_aph>div{
+  border-top: 1px solid black;
+}
+.sit_price{
+  display: flex;
+  width: 100%;
+  height: 68%;
+  padding-top: 8%;
+  padding-left: 11%;
+  border-bottom: 1px solid gray;
+}
+.sit_total{
+  display: flex;
+  padding-top: 6%;
+  padding-left: 11%;
+}
+.sit_price_total{
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  width: 25%;
+}
+.sit_price_num{
+  position: relative;
+  left: 50px;
+  text-align: right;
+}
+.sit_total_num{
+  position: relative;
+  left: 50px;
+  text-align: right;
+}
+.sitting{
+  width: 35%;
+}
+.sitting_check{
+  position: relative;
+  top: 38%;
+  left: 28%;
+}
+.sitbottom{
+ height: 85px;
+}
+.mod_shadow{
+  height: 63%;
+  width: 100%;
+}
+.absol_center{
+  position: absolute;
+    top: 54%;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: 700;
+}
