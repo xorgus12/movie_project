@@ -97,7 +97,7 @@ margin-right: 49px;
 }
 
 #main-menu > li > a {
-font-size: 0.85rem;
+  font-size: 15px;
 color: rgba(255,255,255,0.85);
 text-align: center;
 text-decoration: none;
@@ -200,7 +200,7 @@ padding: 2em 12em;
   
   .bottom_text_3 {
     position: relative;
-    color: #666666;
+    color: #a0a0a0;
     font-size: 0.72rem;
     text-align: left;
     font-style: normal;
@@ -231,7 +231,7 @@ padding: 2em 12em;
 .gray_box{
   width: 100%;
   height: 1300px;
-  background-color: gray;
+  background-color: whitesmoke;
 }
 
 /* 티켓통 */
@@ -239,8 +239,8 @@ padding: 2em 12em;
   position: relative;
   height: 180px;
   width: 1000px;
-  border: 1px solid black;
-  background-color: gainsboro;
+  border: 1px solid #dddddd;
+  background-color: white;
 
   left: 50%;
   transform: translateX(-50%);
@@ -264,7 +264,7 @@ padding: 2em 12em;
   height: 68%;
   padding-top: 8%;
   padding-left: 11%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #dddddd;
 }
 .sit_total{
   display: flex;
@@ -272,8 +272,8 @@ padding: 2em 12em;
   padding-left: 11%;
 }
 .sit_price_total{
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
   width: 33%;
   position: relative;
   left: 3%;
@@ -327,10 +327,11 @@ padding: 2em 12em;
   justify-content: space-around;
 }
 .pay_top_menu_button{
-  border: 1px solid gray;
+  border: 1px solid #dddddd;
     width: 100%;
     text-align: center;
     padding: 27px;
+    font-weight: 600;
 }
 .ared{
   background-color: #ec6159;

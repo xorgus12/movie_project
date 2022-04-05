@@ -89,7 +89,7 @@
 }
 
 #main-menu > li > a {
-  font-size: 0.85rem;
+  font-size: 15px;
   color: rgba(255,255,255,0.85);
   text-align: center;
   text-decoration: none;
@@ -169,7 +169,7 @@ a{
   
   .bottom_text_3 {
     position: relative;
-    color: #666666;
+    color: #a0a0a0;
     font-size: 0.72rem;
     text-align: left;
     font-style: normal;
@@ -336,7 +336,7 @@ a{
   /* top: 178px; */
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid gray;
+  border: 1px solid #dddddd;
   margin-bottom: 50px;
 }
 .complete_img{
