@@ -146,7 +146,7 @@ padding: 2em 12em;
 
 .midbox{
   width: 1000px;
-  height: 2500px; 
+  height: 2235px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -171,15 +171,15 @@ padding: 2em 12em;
 .movierank{
   position: relative;
   width: 230px;
-  height: 490px;
-  border: 1px solid black;
+  height: 420px;
+  border: 1px solid #dddddd;
   /* top: 110px; */
   
 }
 .moviephoto{
   position: relative;
   width: 230px;
-  height: 390px;
+  height: 330px;
   top: -90px;
 }
 
@@ -241,7 +241,7 @@ padding: 2em 12em;
   position: relative;
   width: 230px;
   height: 90px;
-  top: 400px;
+  top: 330px;
 }
 .ranting15{
 color: #fbac30;
@@ -402,10 +402,10 @@ color: #fbac30;
 .moviebox{
   position: relative;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  height: 2100px;
-  align-content: space-between;
+  height: 1835px;
+  justify-content: space-around;
+  align-content: space-around;
   
 }
 

@@ -189,7 +189,7 @@ padding: 2em 12em;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
-  color: black;
+  color: white;
 }
 .information3{
   position: relative;
@@ -403,6 +403,7 @@ padding: 2em 12em;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
+  color: white;
 }
 .information_cancel_copy{
   position: relative;
