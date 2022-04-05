@@ -97,7 +97,7 @@ margin-right: 49px;
 }
 
 #main-menu > li > a {
-  font-size: 15px;
+font-size: 0.85rem;
 color: rgba(255,255,255,0.85);
 text-align: center;
 text-decoration: none;
@@ -107,7 +107,6 @@ padding: 14px 36px;
 border-right: 1px solid rgba(0,0,0,0.15);
 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-
 
 #main-menu > li:nth-child(1) > a {
 border-left: 1px solid rgba(0,0,0,0.15);

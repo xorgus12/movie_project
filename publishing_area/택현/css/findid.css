@@ -97,7 +97,7 @@ margin-right: 49px;
 }
 
 #main-menu > li > a {
-font-size: 0.85rem;
+  font-size: 15px;
 color: rgba(255,255,255,0.85);
 text-align: center;
 text-decoration: none;
@@ -107,6 +107,7 @@ padding: 14px 36px;
 border-right: 1px solid rgba(0,0,0,0.15);
 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
+
 
 #main-menu > li:nth-child(1) > a {
 border-left: 1px solid rgba(0,0,0,0.15);
@@ -307,7 +308,7 @@ input[type="submit"]:hover{
   
   .bottom_text_3 {
     position: relative;
-    color: #666666;
+    color: #a0a0a0;
     font-size: 0.72rem;
     text-align: left;
     font-style: normal;
