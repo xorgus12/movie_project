@@ -108,6 +108,7 @@ border-right: 1px solid rgba(0,0,0,0.15);
 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+
 #main-menu > li:nth-child(1) > a {
 border-left: 1px solid rgba(0,0,0,0.15);
 }
@@ -154,7 +155,7 @@ padding: 2em 12em;
 
 .signup_box{
   width: 1000px;
-  height: 900px; 
+  height: 1000px; 
   position: relative;
   left: 52%;
   transform: translateX(-50%);
@@ -277,6 +278,7 @@ input[type="submit"]{
 /* 최하단 css */
 .bottom {
     position: relative;
+   
     background-color: #333333;
     z-index: 3;
     width: 100%;

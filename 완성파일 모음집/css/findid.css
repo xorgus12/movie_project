@@ -108,6 +108,7 @@ border-right: 1px solid rgba(0,0,0,0.15);
 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+
 #main-menu > li:nth-child(1) > a {
 border-left: 1px solid rgba(0,0,0,0.15);
 }
@@ -145,20 +146,20 @@ padding: 2em 12em;
 /*여기까지 기본 위 배너 css입니다!*/
 .findid_box{    
   width: 1000px;
-  height: 700px;
+  height: 1000px; 
   position: relative;
   left: 52%;
   transform: translateX(-50%);
 }
 .center{
   position: relative;
-  top: 45%;
+  top: 30%;
   left: 45%;
   transform: translate(-50%, -50%);
-  width: 670px;
+  width:670px;
   background: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px rgb(0 0 0 / 5%);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
 .center h1{
   text-align: center;
@@ -257,6 +258,7 @@ input[type="submit"]:hover{
 /* 최하단 css */
 .bottom {
     position: relative;
+    
     background-color: #333333;
     z-index: 3;
     width: 100%;

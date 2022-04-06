@@ -106,6 +106,7 @@ border-right: 1px solid rgba(0,0,0,0.15);
 text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+
 #main-menu > li:nth-child(1) > a {
 border-left: 1px solid rgba(0,0,0,0.15);
 }
@@ -143,7 +144,7 @@ padding: 2em 12em;
 /*여기까지 기본 위 배너 css입니다!*/
 .login_box{
   width: 1000px;
-  height: 800px; 
+  height: 1000px; 
   position: relative;
   left: 52%;
   transform: translateX(-50%);
@@ -270,7 +271,7 @@ padding: 2em 12em;
 .center{
   position: relative;  
   top: 5%;
-  left: 23%;
+  left: 20%;
   transform: translate(-50%, 38%);
   width: 500px;
   height: 400px;
@@ -453,6 +454,7 @@ input[type="submit"]:hover{
 /* 최하단 css */
 .bottom {
   position: relative;
+ 
   background-color: #333333;
   z-index: 3;
   width: 100%;
