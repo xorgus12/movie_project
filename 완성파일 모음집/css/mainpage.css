@@ -253,11 +253,17 @@ a{
 
 
 .event_box{
-  height: 1300px;
+  height: 1160px;
   width: 1000px;
   position: relative;
   left: 50%;
   transform: translate(-50%,3%);
+}
+.highbox{
+  position: relative;
+  height: 365px;
+  width: 1000px;
+  top: 20px;
 }
 .event_event{
   float: left;
@@ -311,20 +317,28 @@ a{
   font-weight: 700;
   left:30px;
 }
+.midlebox{
+  position: relative;
+  width: 1000px;
+  width: 480px;
+  display: flex;
+  /* justify-content: space-around; */
+  top: 75px;
+}
 .announcement{
   position: relative;
-  float: left;
-  top: 150px;
+  /* float: left; */
+  /* top: 150px; */
   height: 260px;
   width: 480px;
-  left: 20px;
+  /* left: 20px; */
 }
 .announcement_letter{
   font-size: 16px;
   font-weight: 700;
 }
 .announcement_letter2{
-  float: left;
+  /* float: left; */
   position: relative;
   left: 10px;
   font-size: 14px;
@@ -332,50 +346,55 @@ a{
 }
 .qna{
   position: relative;
-  display: inline-block;
-  top: 150px;
+  /* display: inline-block; */
+  /* top: 150px; */
   font-size: 16px;
   font-weight: 700;
-  left: 50px;
+  left: 100px;
+  width: 480px;
+  height: 260px;
 }
 .qna_letter2{
   font-size: 14px;
 }
 .Box_tool{
   position: relative;
-  top: 270px;
-  right: 45%;
-  width: 1431px;
+  display: flex;
+  top: 165px;
+  /* right: 45%; */
+  width: 1000px;
   height: 180px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .movie_ranking{
   position: relative;
-  left: 20px;
-  float: left;
+  /* left: 20px; */
+  /* float: left; */
   width: 180px;
   height: 180px;
   background-image: url(../img/mainpage/영화순위.jpg);
 }
 .ticketing{
   position: relative;
-  margin-left: 77px;
-  float: left;
+  /* margin-left: 77px; */
+  /* float: left; */
   width: 180px;
   height: 180px;
   background-image: url(../img/mainpage/예매.jpg);
 }
 .service_center{
   position: relative;
-  margin-left: 77px;
-  float: left;
+  /* margin-left: 77px; */
+  /* float: left; */
   width: 180px;
   height: 180px;
   background-image: url(../img/mainpage/고객센터.jpg);
 }
 .mypage{
   position: relative;
-  margin-left: 77px;
-  float: left;
+  /* margin-left: 77px;  */
+  /* float: left; */
   width: 180px;
   height: 180px;
   background-image: url(../img/mainpage/마이페이지.jpg);
