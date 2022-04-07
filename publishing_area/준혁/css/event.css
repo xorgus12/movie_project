@@ -283,7 +283,7 @@ ul,li{list-style:none;}
 .event_list_date{
   position: relative;
     top: -6px;
-    left: 172px;
+    left: 140px;
     font-size: 13px;
 }
 
@@ -301,7 +301,7 @@ ul,li{list-style:none;}
 }
 .ing_event{
   position: relative;
-  
+  top: 13px;
   height: 60px;
   width: 400px;
   border: 1px solid #dddddd;
@@ -315,7 +315,7 @@ ul,li{list-style:none;}
 }
 .end_event{
   position: relative;
- 
+  top: 13px;
   height: 60px;
   width: 400px;
   border: 1px solid #dddddd;
@@ -420,6 +420,7 @@ ul,li{list-style:none;}
 }
 .ing_event_2{
   position: relative;
+  top: 13px;
   height: 60px;
   width: 400px;
   border: 1px solid #dddddd;
