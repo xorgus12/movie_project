@@ -98,7 +98,7 @@ margin-right: 49px;
 }
 
 #main-menu > li > a {
-  font-size: 15px;
+font-size: 0.85rem;
 color: rgba(255,255,255,0.85);
 text-align: center;
 text-decoration: none;
@@ -189,7 +189,7 @@ padding: 2em 12em;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
-  color: black;
+  color: white;
 }
 .information3{
   position: relative;
@@ -311,6 +311,7 @@ padding: 2em 12em;
   display: none;
 
 }
+
 .step2_sub_low{
   position: relative;
   text-align: center;
@@ -402,6 +403,7 @@ padding: 2em 12em;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
+  color: white;
 }
 .information_cancel_copy{
   position: relative;
@@ -538,7 +540,7 @@ padding: 2em 12em;
   
   .bottom_text_3 {
     position: relative;
-    color: #a0a0a0;
+    color: #666666;
     font-size: 0.72rem;
     text-align: left;
     font-style: normal;
