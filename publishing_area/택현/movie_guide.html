@@ -9,6 +9,91 @@
 <link rel="icon" type="image/png"  href="img/root/favicon2.png"/>
 <title>Project movie studio</title>
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+       $(function(){
+      const con = ".movie_box";
+      const con2 =".movie_box2";
+      const con3 =".movie_box3";
+      const con4 =".movie_box4"; 
+      const con5 =".movie_box5";
+      const con6 =".movie_box6";
+      const con7 =".movie_box7";  
+      
+
+      $(".area").click(function() { 
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'none');   
+      $(con4).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con3).css('display', 'none');
+      $(con).css('display', 'flex');
+      });    
+  
+
+      $(".area2").click(function() { 
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'none');  
+      $(con).css('display', 'none');
+      $(con3).css('display', 'none');
+      $(con4).css('display', 'none');      
+      $(con2).css('display', 'flex');
+      });
+
+      $(".area3").click(function() { 
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'none');     
+      $(con).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con4).css('display', 'none');   
+      $(con3).css('display', 'flex');
+      });
+      
+      $(".area4").click(function() { 
+      $(con).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con3).css('display', 'none');      
+      $(con4).css('display', 'flex');
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'none');  
+      });
+     
+      $(".area5").click(function() {     
+      $(con4).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con3).css('display', 'none');
+      $(con).css('display', 'none');
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'flex');  
+      });   
+      
+      $(".area6").click(function() {     
+      $(con4).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con3).css('display', 'none');
+      $(con).css('display', 'none');
+      $(con7).css('display', 'none');
+      $(con6).css('display', 'flex');
+      $(con5).css('display', 'none');  
+      }); 
+      
+      $(".area7").click(function() {     
+      $(con4).css('display', 'none');
+      $(con2).css('display', 'none');
+      $(con3).css('display', 'none');
+      $(con).css('display', 'none');
+      $(con7).css('display', 'flex');
+      $(con6).css('display', 'none');
+      $(con5).css('display', 'none');  
+      }); 
+    });
+    
+</script>
 <body>
     <div class="box_case"><!--좌우크기조절-->
       <a href="" class="main_back">
@@ -54,42 +139,450 @@
   <div class="guide">극장 안내 </div>
 
   <div class="movie_box">        
-    <a href=""><div class="area">
-      <div class="area_index">전체</div>
+    <div class="area red">
+      <div class="area_index" style="background-color: #ec6159;;">전체</div>
       
-    </div></a>
+    </div>
 
-    <a href=""><div class="area2">
+    <div class="area2">
       <div class="area_index">서울/경기/인천</div>
-    </div></a>
+    </div>
 
-    <a href=""><div class="area2">
+    <div class="area3">
       <div class="area_index">부산</div>
-    </div></a>
+    </div>
 
-    <a href=""> <div class="area2">
+     <div class="area4">
       <div class="area_index">충남/대전</div>
-    </div></a>
-    <a href=""> <div class="area2">
+    </div>
+     <div class="area5">
       <div class="area_index">경북/대구/경남/울산</div>
-    </div></a>   
-    <a href=""> <div class="area2">
+    </div>   
+     <div class="area6">
       <div class="area_index">전라/광주</div>
-    </div></a>   
-    <a href=""> <div class="area2">
+    </div>   
+     <div class="area7">
       <div class="area_index">강원/제주</div>
-    </div></a> 
+    </div> 
+
+    <div class="movie_area">
+          
+      <table class="movie_table">                     
+        <thead>  
+          <tr>           
+              <td>12</td>   
+              <td>34</td>   
+              <td>56</td>   
+          </tr>              
+          <tr>           
+            <td>34</td>
+            <td>456</td>   
+            <td>324</td>   
+        </tr>              
+        <tr>           
+          <td>123132</td>
+          <td>64564</td>   
+          <td>456456</td>   
+      </tr>  
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>            
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>                        
+        </thead>
+                            
+    </table>
+  </div>
   
 
 </div> 
+
+<!--area2-->
+<div class="movie_box2">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
+
+  <div class="area2 red">
+    <div class="area_index" style="background-color: #ec6159;;">서울/경기/인천</div>
+  </div>
+
+  <div class="area3">
+    <div class="area_index">부산</div>
+  </div>
+
+   <div class="area4">
+    <div class="area_index">충남/대전</div>
+  </div>
+   <div class="area5">
+    <div class="area_index">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6">
+    <div class="area_index">전라/광주</div>
+  </div>   
+   <div class="area7">
+    <div class="area_index">강원/제주</div>
+  </div> 
+
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>34</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
+</div>
+</div> 
+
+<!--area3-->
+<div class="movie_box3">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
+
+  <div class="area2">
+    <div class="area_index">서울/경기/인천</div>
+  </div>
+
+  <div class="area3 red">
+    <div class="area_index" style="background-color: #ec6159;;">부산</div>
+  </div>
+
+   <div class="area4">
+    <div class="area_index">충남/대전</div>
+  </div>
+   <div class="area5">
+    <div class="area_index">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6">
+    <div class="area_index">전라/광주</div>
+  </div>   
+   <div class="area7">
+    <div class="area_index">강원/제주</div>
+  </div> 
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>34</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
 </div>
 
+</div> 
+<!--area4-->
+<div class="movie_box4">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
 
+  <div class="area2">
+    <div class="area_index">서울/경기/인천</div>
+  </div>
 
+  <div class="area3">
+    <div class="area_index">부산</div>
+  </div>
 
-<div class="btn_bottom">                    
+   <div class="area4 red">
+    <div class="area_index" style="background-color: #ec6159;;">충남/대전</div>
+  </div>
+   <div class="area5">
+    <div class="area_index">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6">
+    <div class="area_index">전라/광주</div>
+  </div>   
+   <div class="area7">
+    <div class="area_index">강원/제주</div>
+  </div> 
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>34</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
+</div>
+
+</div> 
+<!--area5-->
+<div class="movie_box5">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
+
+  <div class="area2">
+    <div class="area_index">서울/경기/인천</div>
+  </div>
+
+  <div class="area3">
+    <div class="area_index">부산</div>
+  </div>
+
+   <div class="area4">
+    <div class="area_index">충남/대전</div>
+  </div>
+   <div class="area5 red">
+    <div class="area_index" style="background-color: #ec6159;;">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6">
+    <div class="area_index">전라/광주</div>
+  </div>   
+   <div class="area7">
+    <div class="area_index">강원/제주</div>
+  </div> 
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>34</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
+</div>
+
+</div> 
+<!--area6-->
+<div class="movie_box6">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
+
+  <div class="area2">
+    <div class="area_index">서울/경기/인천</div>
+  </div>
+
+  <div class="area3">
+    <div class="area_index">부산</div>
+  </div>
+
+   <div class="area4">
+    <div class="area_index">충남/대전</div>
+  </div>
+   <div class="area5">
+    <div class="area_index">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6 red">
+    <div class="area_index" style="background-color: #ec6159;;">전라/광주</div>
+  </div>   
+   <div class="area7">
+    <div class="area_index">강원/제주</div>
+  </div> 
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>34</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
+</div>
+
+</div> 
+<!--area7-->
+<div class="movie_box7">        
+  <div class="area">
+    <div class="area_index">전체</div>
+    
+  </div>
+
+  <div class="area2">
+    <div class="area_index">서울/경기/인천</div>
+  </div>
+
+  <div class="area3">
+    <div class="area_index">부산</div>
+  </div>
+
+   <div class="area4">
+    <div class="area_index">충남/대전</div>
+  </div>
+   <div class="area5">
+    <div class="area_index">경북/대구/경남/울산</div>
+  </div>   
+   <div class="area6">
+    <div class="area_index">전라/광주</div>
+  </div>   
+   <div class="area7 red">
+    <div class="area_index" style="background-color: #ec6159;;">강원/제주</div>
+  </div> 
+  <div class="movie_area">
+          
+    <table class="movie_table">                     
+      <thead>  
+        <tr>           
+            <td>12</td>   
+            <td>34</td>   
+            <td>56</td>   
+        </tr>              
+        <tr>           
+          <td>35454</td>
+          <td>456</td>   
+          <td>324</td>   
+      </tr>              
+      <tr>           
+        <td>123132</td>
+        <td>64564</td>   
+        <td>456456</td>   
+    </tr>  
+    <tr>           
+      <td>123132</td>
+      <td>64564</td>   
+      <td>456456</td>   
+  </tr>            
+  <tr>           
+    <td>123132</td>
+    <td>64564</td>   
+    <td>456456</td>   
+</tr>                        
+      </thead>
+                          
+  </table>
+</div>
+
+ </div> 
+ <div class="btn_bottom">                    
   <button type="button" class="btnn " value="ALL" id="btnMoreALL">더보기</button>   
 </div>
+</div>
+
+
+
+
 
 
 
