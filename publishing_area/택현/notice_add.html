@@ -2,12 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>center_service</title>
+<title>notice_add</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<link href="css/center_service.css" rel="stylesheet" type="text/css">
+<link href="css/notice_add.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png"  href="img/root/favicon2.png"/>
-<title>Project movie studio</title>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <script>
+         $(document).ready(function() {
+          $('#summernote').summernote({height:300, lang:'ko-KR'});
+       });
+  </script>
 </head>
 <body>
     <div class="box_case"><!--좌우크기조절-->
@@ -47,6 +52,41 @@
         </ul>
 </div>
      <!--여기까지 기본 위 배너 입니다!-->
+     <div class="container mb-1">
+      <div class="add_box">공지사항 등록</div>
+      <form method="post" class="mt-4">
+        <div class="form-floating mt-2">
+          <label>제목</label>	
+          <div >				
+          <input type="text" name="title" class="form-control" placeholder="제목">
+          </div>      
+          <label>작성자</label>		
+          <div >					
+          <input type="text" name="writer" class="form-control" placeholder="작성자">		
+       		</div>
+        </div>	
+        <br>	
+        <label>내용</label>			
+        <div class="mt-2">			
+          <textarea rows="25" cols="149" id="summernote" name="content"></textarea>         
+        </div>		
+        <div>						
+          <input type="date" name="ragdate">				
+          <div class="add_setbutton"><input type="submit" value="등록하기">
+          <a href="notice.html" class="btn btn-sm btn-primary">목록가기</a></div>						
+        </div>
+        
+      
+      </form>
+    </div>
+
+
+
+
+
+
+
+     
 
 
           <!-- 제일 최하단 -->

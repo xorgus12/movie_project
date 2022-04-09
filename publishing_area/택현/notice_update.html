@@ -2,27 +2,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>notice</title>
+<title>notice_update</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<link href="css/notice.css" rel="stylesheet" type="text/css">
+<link href="css/notice_add.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png"  href="img/favicon2.png"/>
+<link rel="icon" type="image/png"  href="img/root/favicon2.png"/>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <script>
+         $(document).ready(function() {
+          $('#summernote').summernote({height:300, lang:'ko-KR'});
+       });
+  </script>
 </head>
 <body>
     <div class="box_case"><!--좌우크기조절-->
-      <a href="/index.html" class="main_back">
+      <a href="" class="main_back">
         <div class="title">
               <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘"/>
               <div class="title_name">Miner Cinema</div>
           </div>
-        </a>
+        </a>  
         <div class="title_right">
             <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
             <div class="login_link" style="color: black;"><a href="center" >고객센터</a></div>
-            <div class="login_link" style="color: black;"><a href="/login.html" >로그인</a></div>
+            <div class="login_link" style="color: black;"><a href="login" >로그인</a></div>
         </div>
     </div>
-    
         <div class="black_box">
         <ul id="main-menu">
         <li><a href="#">예매</a>
@@ -47,67 +52,48 @@
         </ul>
 </div>
      <!--여기까지 기본 위 배너 입니다!-->
-
-     <div class="notice_box">
-
-        <div class="notice_seq">공지사항</div>          
-          <div class="notice_area">
-          
-             <table class="tb">
-              <colgroup>
-                <col width="130">
-                <col>
-                <col width="170">
-            </colgroup>              
-              <thead>
-                  <tr>
-                      <th>번호</th>
-                      <th>제목</th>
-                      <th>등록일</th>
-                  </tr>
-              </thead>
-              <tbody id="notice_midle">
-                <tr>
-                    <td>111111</td>
-                    <td><a href="notice_list.html">영화예매 취소좀</a></p></td>
-                    <td>2022-03-29</td>
-                </tr>
-              </tbody>                          
-          </table>
-         </div>
-         <!-- 페이징디자인 -->
-         <div class="pager ">
-          <div class="page_wrap">
-            <div class="page_nation">
-               <a class="arrow pprev" href="#"></a>
-               <a class="arrow prev" href="#"></a>
-               <a href="#" class="active">1</a>
-               <a href="#">2</a>
-               <a href="#">3</a>
-               <a href="#">4</a>
-               <a href="#">5</a>
-               <a href="#">6</a>
-               <a href="#">7</a>
-               <a href="#">8</a>
-               <a href="#">9</a>
-               <a href="#">10</a>
-               <a class="arrow next" href="#"></a>
-               <a class="arrow nnext" href="#"></a>
-            </div>
-         </div>
+     <div class="container mb-1">
+      <div class="add_box">공지사항 변경내역</div>
+      <form method="post" class="mt-4">
+        <div class="form-floating mt-2">
+          <label>제목</label>	
+          <div >				
+          <input type="text" name="title" class="form-control" placeholder="제목">
+          </div>      
+          <label>작성자</label>		
+          <div >					
+          <input type="text" name="writer" class="form-control" placeholder="작성자">		
+       		</div>
+        </div>	
+        <br>	
+        <label>내용</label>			
+        <div class="mt-2">			
+          <textarea rows="25" cols="149" id="summernote" name="content"></textarea>         
+        </div>		
+        <div>						
+          <input type="date" name="ragdate">				
+          <div class="add_setbutton"><input type="submit" value="등록하기">
+            <a href="notice.html" class="btn btn-sm btn-primary">목록가기</a></div>						
         </div>
-        </div>
+        
+      
+      </form>
+    </div>
 
 
 
 
 
-     <!-- 제일 최하단 -->
 
-     <hr class="lhr5"/>
+
+     
+
+
+          <!-- 제일 최하단 -->
+
 <div class="bottom">
     <!--고객센터-->
-
+    <hr class="lhr5"/>
     <div class="inner_case_bottom">
         <div class="bottom_text_1">고객센터</div>
         <div class="bottom_text_2">평일 08:00 ~ 19:30, 토요일,공휴일
@@ -119,6 +105,5 @@
         </div>
         <div class="bottom_text_4">© ProjectCinema Co., Ltd All rights reservedv.</div>
     </div>
-
 </body>
 </html>
