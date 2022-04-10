@@ -145,7 +145,7 @@ padding: 2em 12em;
 
 .movies_box{
   width: 1000px;
-  height: 1100px; 
+  height: 1500px; 
   position: relative;  
   left: 50%;
   transform: translateX(-50%);
@@ -163,42 +163,49 @@ padding: 2em 12em;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    flex-direction: column;
 }
 .movie_box2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+  flex-direction: column;
 }
 .movie_box3{
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    flex-direction: column;
 }
 .movie_box4{
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    flex-direction: column;
 }
 .movie_box5{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+  flex-direction: column;
 }
 .movie_box6{
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    flex-direction: column;
 }
 .movie_box7{
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    flex-direction: column;
 }
 
 
@@ -218,7 +225,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -231,7 +238,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -243,7 +250,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -256,7 +263,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -269,7 +276,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -282,7 +289,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -294,7 +301,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #777777;
 
  
@@ -352,7 +359,7 @@ padding: 2em 12em;
   top: 150px;
 
   height: 60px;
-  width: 230px;
+  width: 180px;
   background-color: #ec6159;
 
  
@@ -435,6 +442,49 @@ padding: 2em 12em;
    color:#fff;
    border:1px solid #42454c;
 }
+
+.movie_map {
+  left: 252px; 
+  position: absolute;
+  
+  
+}
+.movie_map2 {
+  
+  display: none;
+  
+}
+
+.movie_map3 {
+ 
+  display: none;
+  
+}
+.movie_map4 {
+ 
+  display: none;
+  
+}
+
+.movie_map5 {
+ 
+  display: none;
+  
+}
+
+.movie_map6 {
+ 
+  display: none;
+  
+}
+
+.movie_map7 {
+ 
+  display: none;
+  
+}
+
+
 
 
 /* bottom */

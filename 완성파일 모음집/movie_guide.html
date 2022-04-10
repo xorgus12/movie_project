@@ -94,6 +94,8 @@
     });
     
 </script>
+
+
 <body>
     <div class="box_case"><!--좌우크기조절-->
       <a href="" class="main_back">
@@ -135,17 +137,38 @@
    
      <!--area-->
 <div class="movies_box">
-
   <div class="guide">극장 안내 </div>
+   <div class="movie_map">
+    <!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1649567405666" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-  <div class="movie_box">        
-    <div class="area red">
+<!--
+2. 설치 스크립트
+* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+new daum.roughmap.Lander({
+"timestamp" : "1649567405666",
+"key" : "29s94",
+"mapWidth" : "750",
+"mapHeight" : "390"
+}).render();
+</script>
+  </div>     
+    <div class="movie_box">       
+    <div class="area red">      
       <div class="area_index" style="background-color: #ec6159;;">전체</div>
-      
+     
     </div>
 
     <div class="area2">
       <div class="area_index">서울/경기/인천</div>
+      
+      
     </div>
 
     <div class="area3">
@@ -205,12 +228,13 @@
 <!--area2-->
 <div class="movie_box2">        
   <div class="area">
-    <div class="area_index">전체</div>
-    
+    <div class="area_index">전체</div>   
   </div>
 
   <div class="area2 red">
     <div class="area_index" style="background-color: #ec6159;;">서울/경기/인천</div>
+  
+ 
   </div>
 
   <div class="area3">
@@ -231,6 +255,7 @@
   </div> 
 
   <div class="movie_area">
+    
           
     <table class="movie_table">                     
       <thead>  
@@ -278,6 +303,8 @@
 
   <div class="area3 red">
     <div class="area_index" style="background-color: #ec6159;;">부산</div>
+   
+   
   </div>
 
    <div class="area4">
@@ -344,6 +371,7 @@
 
    <div class="area4 red">
     <div class="area_index" style="background-color: #ec6159;;">충남/대전</div>
+   
   </div>
    <div class="area5">
     <div class="area_index">경북/대구/경남/울산</div>
@@ -409,6 +437,7 @@
   </div>
    <div class="area5 red">
     <div class="area_index" style="background-color: #ec6159;;">경북/대구/경남/울산</div>
+   
   </div>   
    <div class="area6">
     <div class="area_index">전라/광주</div>
@@ -474,6 +503,7 @@
   </div>   
    <div class="area6 red">
     <div class="area_index" style="background-color: #ec6159;;">전라/광주</div>
+   
   </div>   
    <div class="area7">
     <div class="area_index">강원/제주</div>
@@ -539,6 +569,7 @@
   </div>   
    <div class="area7 red">
     <div class="area_index" style="background-color: #ec6159;;">강원/제주</div>
+
   </div> 
   <div class="movie_area">
           
