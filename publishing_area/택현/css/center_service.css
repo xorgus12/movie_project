@@ -279,16 +279,6 @@ padding: 2em 12em;
 .sub_box{
   position: relative;
   left: 130px;
-  left: 150px;
-  float: left;
-  width: 180px;
-  height: 160px;
-  background-image: url(../img/center_service/reservation.png);
-}
-
-.sub_box1{
-  position: relative;
-  left: 250px;
   float: left;
   width: 180px;
   height: 180px;

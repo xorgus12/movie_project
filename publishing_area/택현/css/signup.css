@@ -144,7 +144,16 @@ column-width: 15em;
 padding: 2em 12em;
 }
 /*여기까지 기본 위 배너 css입니다!*/
-.findid_box{    
+
+.body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.signup_box{
   width: 1000px;
   height: 1000px; 
   position: relative;
@@ -153,30 +162,33 @@ padding: 2em 12em;
 }
 .center{
   position: relative;
-  top: 30%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  width:670px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    bottom: 10%;
+    left: 45%;
+    transform: translate(-50%, 38%);
+    width: 550px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
+    box-shadow: 11px 10px 15px rgb(0 0 0 / 5%);
+
 }
 .center h1{
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid silver;
 }
-.center, txt_field  {
-  padding: 0 40px;
+.center form{
+  padding: 0 50px;
   box-sizing: border-box;
 }
-div .txt_field{
+form .txt_field{
   position: relative;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #adadad;
   margin: 30px 0;
 }
- .txt_field input{
-  width: 100%;
+.txt_field input{
+  width: 85%;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
@@ -184,7 +196,7 @@ div .txt_field{
   background: none;
   outline: none;
 }
- .txt_field label{
+.txt_field label{
   position: absolute;
   top: 50%;
   left: 5px;
@@ -213,6 +225,18 @@ div .txt_field{
 .txt_field input:valid ~ span::before{
   width: 100%;
 }
+
+.txt_field > p {
+    float: left;	
+    
+}
+
+.txt_field > span {
+    float: right;
+    
+    
+}
+
 .pass{
   margin: -5px 0 20px 5px;
   color: #a6a6a6;
@@ -223,7 +247,7 @@ div .txt_field{
 }
 input[type="submit"]{
   width: 100%;
-  height: 40px;
+  height: 50px;
   border: 1px solid;
   background: black;
   border-radius: 25px;
@@ -233,12 +257,9 @@ input[type="submit"]{
   cursor: pointer;
   outline: none;
 }
-input[type="submit"]:hover{
-  border-color: #2691d9;
-  transition: .5s;
-}
+
 .signup_link{
-  margin: 15px 0;
+  margin: 30px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;  
@@ -246,19 +267,18 @@ input[type="submit"]:hover{
 .signup_link a{
   color: #666666;
   text-decoration: none;
-  padding-left: 10px;
    
 }
 .signup_link a:hover{
   text-decoration: underline;  
 }
-
+/* 회원가입 */
 
 /* bottom */
 /* 최하단 css */
 .bottom {
     position: relative;
-    
+   
     background-color: #333333;
     z-index: 3;
     width: 100%;

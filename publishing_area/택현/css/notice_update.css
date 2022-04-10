@@ -144,121 +144,139 @@ column-width: 15em;
 padding: 2em 12em;
 }
 /*여기까지 기본 위 배너 css입니다!*/
-.findid_box{    
-  width: 1000px;
-  height: 1000px; 
-  position: relative;
-  left: 52%;
+.container{
+width: 1000px;
+  height: 1100px; 
+  position: relative;  
+  left: 50%;
   transform: translateX(-50%);
 }
-.center{
+.add_box{
   position: relative;
-  top: 30%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  width:670px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-}
-.center h1{
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid silver;
-}
-.center, txt_field  {
-  padding: 0 40px;
-  box-sizing: border-box;
-}
-div .txt_field{
-  position: relative;
-  border-bottom: 2px solid #dddddd;
-  margin: 30px 0;
-}
- .txt_field input{
-  width: 100%;
-  padding: 0 5px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background: none;
-  outline: none;
-}
- .txt_field label{
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  color: #adadad;
-  transform: translateY(-50%);
-  font-size: 16px;
-  pointer-events: none;
-  transition: .5s;
-}
-.txt_field span::before{
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #2691d9;
-  transition: .5s;
-}
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
-  top: -5px;
-  color: #2691d9;
-}
-.txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before{
-  width: 100%;
-}
-.pass{
-  margin: -5px 0 20px 5px;
-  color: #a6a6a6;
-  cursor: pointer;
-}
-.pass:hover{
-  text-decoration: underline;
-}
-input[type="submit"]{
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  background: black;
-  border-radius: 25px;
-  font-size: 18px;
-  color: #fff;
+  padding: 60px 0 50px;
+  font-size: 35px;
   font-weight: 700;
-  cursor: pointer;
-  outline: none;
-}
-input[type="submit"]:hover{
-  border-color: #2691d9;
-  transition: .5s;
-}
-.signup_link{
-  margin: 15px 0;
   text-align: center;
-  font-size: 16px;
-  color: #666666;  
 }
-.signup_link a{
-  color: #666666;
-  text-decoration: none;
-  padding-left: 10px;
-   
+.form-floating{
+  text-align: left;
+  height: 100%;
+  width: 100%;
 }
-.signup_link a:hover{
-  text-decoration: underline;  
+.add_setbutton{
+  text-align: center;
+  padding: 10%;
+}
+.add_setbutton a{
+  padding-left: 2%;
 }
 
+.form-control{
+  height: 100%;
+  width: 100%;
+}
 
+.file-upload label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
+.file-upload input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.file-upload label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+}
+
+/* named upload */
+.file-upload .upload-name {
+  display: inline-block;
+  padding: .5em .75em;  /* label의 패딩값과 일치 */
+  font-size: inherit;
+  font-family: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: .25em;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+/* imaged preview */
+.file-upload .upload-display {  /* 이미지가 표시될 지역 */
+  margin-bottom: 5px;
+}
+
+@media(min-width: 768px) { 
+  .file-upload .upload-display {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 0;
+  }
+}
+
+.file-upload .upload-thumb-wrap {  /* 추가될 이미지를 감싸는 요소 */
+  display: inline-block;
+  width: 54px;
+  padding: 2px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.file-upload .upload-display img {  /* 추가될 이미지 */
+  display: block;
+  max-width: 100%;
+  width: 100% \9;
+  height: auto;
+}
+
+/*여기까지 기본 위 배너 css입니다!*/
 /* bottom */
 /* 최하단 css */
 .bottom {
     position: relative;
-    
+  
     background-color: #333333;
     z-index: 3;
     width: 100%;

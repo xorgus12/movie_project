@@ -184,7 +184,7 @@ padding: 2em 12em;
 }
 form .txt_field{
   position: relative;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid #dddddd;
   margin: 30px 0;
 }
 .txt_field input{
