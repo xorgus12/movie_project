@@ -282,22 +282,14 @@ padding: 2em 12em;
   left: 150px;
   float: left;
   width: 180px;
-  height: 160px;
-  background-image: url(../img/center_service/reservation.png);
-}
-
-.sub_box1{
-  position: relative;
-  left: 250px;
-  float: left;
-  width: 180px;
   height: 180px;
   background-image: url(../img/center_service/planning.png);
 }
 
+
 .sub_box1{
   position: relative;
-  left: 240px;
+  left: 250px;
   float: left;
   top: 25px;
   width: 140px;
