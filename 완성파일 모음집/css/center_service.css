@@ -278,25 +278,26 @@ padding: 2em 12em;
 }
 .sub_box{
   position: relative;
-  left: 150px;
-  float: left;
-  width: 180px;
-  height: 160px;
-  background-image: url(../img/center_service/reservation.png);
-}
-
-.sub_box1{
-  position: relative;
-  left: 250px;
+  left: 130px;
   float: left;
   width: 180px;
   height: 180px;
   background-image: url(../img/center_service/planning.png);
 }
 
+.sub_box1{
+  position: relative;
+  left: 240px;
+  float: left;
+  top: 25px;
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/center_service/faq.png);
+}
+
 .sub_box2{
   position: relative;
-  left: 350px;
+  left: 330px;
   float: left;
   width: 180px;
   height: 180px;
