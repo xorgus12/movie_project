@@ -1,0 +1,473 @@
+@charset "UTF-8";
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding: 0px;
+  color: #000;
+}
+a:hover {
+  color: black;
+}
+.main_back{
+  display: flex;
+}
+a {
+   text-decoration: none;
+   color:black;
+} 
+#main-menu{
+  list-style: none;
+  padding-left: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box_case{
+  position: relative;
+  height: 125px;
+  width: 100%;
+  background-color: white;
+  
+}
+.title{
+  font-size: 2rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title_name{
+  position: relative;
+  left: 10px;
+  top: 4px;
+}
+.title_right{
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 80%;
+  width: 200px;
+  transform: translateY(-50%);
+  letter-spacing: 1px;
+}
+.login_link{
+  position: relative;
+  left: 4%;
+  width: 70px;
+}
+.drop_down_maincase{
+  position: relative;
+  display: flex;
+  padding: 5px;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+      text-align: center;
+}
+.black_box{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 9;
+  position: relative;
+}
+#main-menu > li {
+float: left;
+position: relative;
+margin-left: 49px;
+margin-right: 49px;
+}
+
+#main-menu > li > a {
+  font-size: 15px;
+color: rgba(255,255,255,0.85);
+text-align: center;
+text-decoration: none;
+letter-spacing: 0.05em;
+display: block;
+padding: 14px 36px;
+border-right: 1px solid rgba(0,0,0,0.15);
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#main-menu > li:nth-child(1) > a {
+border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+position: absolute;
+background: #000000;
+width: 200%;
+visibility: hidden;
+transition: all 0.15s ease-in;
+}
+
+#sub-menu > li {
+padding: 16px 28px;
+border-bottom: 1px solid rgba(0,0,0,0.15);
+z-index: 9;
+}
+#sub-menu > li >  a {
+color: rgba(255,255,255,0.6);
+text-decoration: none;
+z-index: 9;
+}
+
+#main-menu > li:hover #sub-menu {
+opacity: 1;
+visibility: visible;
+z-index: 9;
+}
+
+
+section {
+column-width: 15em;
+padding: 2em 12em;
+}
+/*여기까지 기본 위 배너 css입니다!*/
+/* bottom */
+/* 최하단 css */
+.bottom {
+    position: relative;
+    background-color: #333333;
+    z-index: 3;
+    width: 100%;
+    height: 25rem;
+  
+  }
+  .inner_case_bottom {
+    position: absolute;
+    height: 85%;
+    width: 62.5rem;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+  }
+  .lhr5 {
+    position: relative;
+    background-color: #6c6c6c;
+    opacity: 0.3;
+    top: 150px;
+    z-index: 4;
+  }
+  
+  
+  .bottom_text_1 {
+    position: relative;
+    color: white;
+    font-size: 1.92rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    top: px;
+    left: 45px;
+  }
+  
+  .bottom_text_2 {
+    position: relative;
+    color: #a0a0a0;
+    font-size: 0.72rem;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    top: 10px;
+    left: 45px;
+  }
+  
+  .bottom_text_3 {
+    position: relative;
+    color: #a0a0a0;
+    font-size: 0.72rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 6.3rem;
+    left: 45px;
+  }
+  
+  .bottom_text_4 {
+    position: relative;
+    color: #a6a6a6;
+    font-size: 0.96rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 9rem;
+    left: 45px;
+  }
+  /* bottom */
+  /* ticketing Start */
+  .white_box{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    position: relative;
+  }
+.gray_box{
+  width: 100%;
+  height: 1200px;
+  background-color: whitesmoke;
+}
+.ticketing_box{
+  width: 1080px;
+  height: 800px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #dddddd;
+}
+/* 티켓통 */
+.ticket_list{
+  width: 10%;
+  text-align: center;
+}
+.tic_list{
+  border: 1px solid #dddddd;
+  height: 200px;
+}
+/* 좌1완 */
+
+.movie_place{
+  width: 24%;
+  height: 100%;
+}
+.movie_place_title{
+  background-color: black;
+  height: 10%;
+}
+.title_center{
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 66px;
+}
+.movie_place_sub{
+  display: flex;
+}
+.movie_place_sub1{
+  width: 50%;
+  height: 640px;
+  border-right: 1px solid #dddddd;
+  background-color: gainsboro;
+
+}
+.movie_place_sub1>button{
+  width: 100%;
+  position: relative;
+  top: 2%;
+  line-height: 40px;
+  border:none;
+  outline: none;
+  box-shadow: none;
+  background-color: gainsboro;
+}
+.movie_place_sub1>button:hover{
+  background-color: white;
+}
+
+.movie_place_sub2{
+  width: 50%;
+  height: 640px;
+  border-right: 1px solid #dddddd;
+    background-color: white;
+}
+.movie_place_sub2>button{
+  width: 100%;
+  position: relative;
+  top: 2%;
+  line-height: 40px;
+  border:none;
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+.movie_place_sub2>button:hover{
+  color: red;
+}
+.place{
+  display: flex;
+  height: 80px;
+  width: 100%;
+}
+.place_box{
+  width: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+/* 좌2 완 */
+.movie_check{
+  width: 24%;
+  height: 100%;
+  background-color: gainsboro;
+}
+.movie_select{
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+#movie_sort{
+  position: relative;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 39%;
+  margin-left: 4%;
+}
+.movie_{
+  display: flex;
+  top: 15px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: gainsboro;
+}
+.movie_:hover{
+  background-color: white;
+}
+.movie_name{
+  position: relative;
+  top: 22%;
+  left: 10px;
+}
+.movie_audits{
+  border-right: 1px solid #dddddd;
+  height: 640px;
+
+}
+.movie_audits_photo{
+  position: relative;
+  left: 10px;
+  object-fit: contain;
+}
+.contact_button{
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+  padding: 5px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.contact_button:hover{
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.contact_button:active{
+  position:relative;
+	top:1px;
+}
+/* 좌3 완 */
+.movie_date{
+  width: 42%;
+  height: 100%;
+}
+.movie_contact_sub1{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+.movie_contact_sub1:hover{
+  background-color: white;
+}
+.movie_contact_sub2{
+  width: 100%;
+}
+.contact_name{
+  transform: translateY(6px);
+}
+.movie_contact{
+  width: 30%;
+  height: 27%;
+  left: 6%;
+  position: relative;
+}
+.contact{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 45%;
+  align-content: flex-start;
+}
+.calender{
+  height: 45%;
+  width: 100%;
+}
+.ticket_check_box{
+  position: relative;
+  height: 180px;
+  width: 1080px;
+  background-color: white;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.movie_poster{
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.check_com{
+  position: relative;
+  top: 30px;
+  left: 80px;
+  height: 150px;
+  width: 300px;
+}
+.sitting_check{
+  position: relative;
+  top: 70px;
+  left: 360px;
+}
+.ticketing_name{
+  position: relative;
+  top: 4%;
+  left: 43%;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  width: 187px;
+}
+/*티켓박스 완*/

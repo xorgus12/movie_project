@@ -1,0 +1,414 @@
+@charset "UTF-8";
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding: 0px;
+  color: #000;
+}
+a:hover {
+  color: black;
+}
+.main_back{
+  display: flex;
+}
+a {
+   text-decoration: none;
+   color:black;
+} 
+#main-menu{
+  list-style: none;
+  padding-left: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box_case{
+  position: relative;
+  height: 125px;
+  width: 100%;
+  background-color: white;
+  
+}
+.title{
+  font-size: 2rem;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title_name{
+  position: relative;
+  left: 10px;
+  top: 4px;
+}
+.title_right{
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  color: white;
+  top: 50%;
+  left: 80%;
+  width: 200px;
+  transform: translateY(-50%);
+  letter-spacing: 1px;
+}
+.login_link{
+  position: relative;
+  left: 4%;
+  width: 70px;
+}
+.drop_down_maincase{
+  position: relative;
+  display: flex;
+  padding: 5px;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+      text-align: center;
+}
+.black_box{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 9;
+  position: relative;
+}
+#main-menu > li {
+float: left;
+position: relative;
+margin-left: 49px;
+margin-right: 49px;
+}
+
+#main-menu > li > a {
+  font-size: 15px;
+color: rgba(255,255,255,0.85);
+text-align: center;
+text-decoration: none;
+letter-spacing: 0.05em;
+display: block;
+padding: 14px 36px;
+border-right: 1px solid rgba(0,0,0,0.15);
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#main-menu > li:nth-child(1) > a {
+border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+position: absolute;
+background: #000000;
+width: 200%;
+visibility: hidden;
+transition: all 0.15s ease-in;
+}
+
+#sub-menu > li {
+padding: 16px 28px;
+border-bottom: 1px solid rgba(0,0,0,0.15);
+z-index: 9;
+}
+#sub-menu > li >  a {
+color: rgba(255,255,255,0.6);
+text-decoration: none;
+z-index: 9;
+}
+
+#main-menu > li:hover #sub-menu {
+opacity: 1;
+visibility: visible;
+z-index: 9;
+}
+
+
+section {
+column-width: 15em;
+padding: 2em 12em;
+}
+/*여기까지 기본 위 배너 css입니다!*/
+/* bottom */
+/* 최하단 css */
+.bottom {
+    position: relative;
+    background-color: #333333;
+    z-index: 3;
+    width: 100%;
+    height: 25rem;
+  }
+  .inner_case_bottom {
+    position: absolute;
+    height: 85%;
+    width: 62.5rem;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+  }
+  .test_box{
+    width: 100%;
+    height: 1500px;
+    background-color: gray;
+  }
+  .lhr5 {
+    position: relative;
+    background-color: #6c6c6c;
+    opacity: 0.3;
+    top: 150px;
+    z-index: 4;
+  }
+
+  
+  
+  .bottom_text_1 {
+    position: relative;
+    color: white;
+    font-size: 1.92rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    left: 45px;
+  }
+  
+  .bottom_text_2 {
+    position: relative;
+    color: #a0a0a0;
+    font-size: 0.72rem;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    top: 10px;
+    left: 45px;
+  }
+  
+  .bottom_text_3 {
+    position: relative;
+    color: #a0a0a0;
+    font-size: 0.72rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 6.3rem;
+    left: 45px;
+  }
+  
+  .bottom_text_4 {
+    position: relative;
+    color: #a6a6a6;
+    font-size: 0.96rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    top: 9rem;
+    left: 45px;
+  }
+  /* bottom */
+  .white_box{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    position: relative;
+  }
+.gray_box{
+  width: 100%;
+  height: 1300px;
+  background-color: whitesmoke;
+}
+
+/* 티켓통 */
+.ticket_check_box{
+  position: relative;
+  height: 180px;
+  width: 1000px;
+  border: 1px solid #dddddd;
+  background-color: white;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.movie_poster{
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.check_com{
+  position: relative;
+  top: 30px;
+  left: 80px;
+  height: 150px;
+  width: 300px;
+}
+.sit_price{
+  display: flex;
+  width: 100%;
+  height: 68%;
+  padding-top: 8%;
+  padding-left: 11%;
+  border-bottom: 1px solid #dddddd;
+}
+.sit_total{
+  display: flex;
+  padding-top: 6%;
+  padding-left: 11%;
+}
+.sit_price_total{
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  width: 33%;
+  position: relative;
+  left: 3%;
+}
+.sit_price_num{
+  position: relative;
+  left: 50px;
+  text-align: right;
+}
+.sit_total_num{
+  position: relative;
+  left: 50px;
+  text-align: right;
+}
+.sitting{
+  width: 35%;
+}
+.sitting_check{
+  position: relative;
+  top: 35%;
+  left: 35%;
+}
+.pay_home{
+  width: 100%;
+  height: 1000px;
+  background-color: whitesmoke;
+}
+.pay_select_box{
+  width: 1000px;
+  height: 700px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pay_select_name{
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: 35px;
+  left: 40px;
+}
+.pay_select{
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  top: 50px;
+}
+.pay_top_menu{
+  display: flex;
+  justify-content: space-around;
+}
+.pay_top_menu_button{
+  border: 1px solid #dddddd;
+    width: 100%;
+    text-align: center;
+    padding: 27px;
+    font-weight: 600;
+}
+.ared{
+  background-color: #ec6159;
+}
+.phone{
+
+  border-right: 0px;
+  border-left: 0px;
+}
+.awhite{
+  background-color: white;
+}
+.pay_bottom{
+  width: 100%;
+  height: 84%;
+  padding: 50px;
+}
+.credit_box_top{
+  display: flex;
+  height: 305px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  bottom: 12px;
+}
+.credit_box_top>button{
+  outline: 0;
+  border: 0;
+  width: 180px;
+  height: 60px;
+  background-color: white;
+}
+.credit_box_top>button:hover{color: red;}
+.credit_box_bottom{
+  font-size: 15px;
+  font-weight: 300;
+}
+.phone_box_top{
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.phone_box_mid{
+  margin-bottom: 30px;
+  line-height: 34px;
+}
+.phone_box_mid>ol>li{
+  opacity: 40%;
+}
+.phone_box_bottom{
+  line-height: 34px;
+}
+.phone_box_bottom>ol>li{
+  opacity: 40%;
+}
+.bank_box_top{
+  opacity: 60%;
+  line-height: 30px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.bank_box_bottom{
+
+  line-height: 30px;
+  font-size: 16px;
+}
+.bank_box_bottom>span{
+  opacity: 60%;
+  font-size: 14px;
+}
+.credit_{
+  display: block;
+}
+.phone_{
+  display: none;
+}
+.bank_{
+  display: none;
+}
