@@ -3,11 +3,12 @@ package kr.ac.kopo.movie_project.model;
 public class Member {
 	private String id;
 	private String passwd;
-	private int grade;
 	private String name;
 	private String tel;
-	private String nickname;
-	private String address;
+	private String email;
+	private int grade;
+	private String cinemaCode;
+	
 	public String getId() {
 		return id;
 	}
@@ -38,17 +39,17 @@ public class Member {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	public String getNickname() {
-		return nickname;
+	public String getCinemaCode() {
+		return cinemaCode;
 	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
+	public void setCinemaCode(String cinemaCode) {
+		this.cinemaCode = cinemaCode;
 	}
-	public String getAddress() {
-		return address;
+	public String getEmail() {
+		return email;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 }

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <jsp:include page="../include/header.jsp"></jsp:include>
-<link rel="stylesheet" href="../../resources/css/signup.css">
+<link rel="stylesheet" href="../css/login/signup.css">
 <script>
 	function check_id_Async() {
 		const form = document.getElementById("signup_form");

@@ -1,11 +1,17 @@
 package kr.ac.kopo.movie_project.model;
 
 public class Review {
+	private String movie;
 	private String id;
 	private String review;
 	private int star;
 	private int recommend;
-	private int movie;
+	public String getMovie() {
+		return movie;
+	}
+	public void setMovie(String movie) {
+		this.movie = movie;
+	}
 	public String getId() {
 		return id;
 	}
@@ -24,17 +30,12 @@ public class Review {
 	public void setStar(int star) {
 		this.star = star;
 	}
-	public int getMovie() {
-		return movie;
-	}
-	public void setMovie(int movie) {
-		this.movie = movie;
-	}
 	public int getRecommend() {
 		return recommend;
 	}
 	public void setRecommend(int recommend) {
 		this.recommend = recommend;
 	}
+
 	
 }

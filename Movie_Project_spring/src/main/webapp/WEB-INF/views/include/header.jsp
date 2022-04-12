@@ -11,3 +11,11 @@
 	<link rel="icon" type="image/png"  href="../img/root/favicon2.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	
+<style>
+	a:hover{
+		color:black;
+		text-decoration: none;
+	}
+	a{
+	color:black;}
+</style>

@@ -4,7 +4,7 @@
 <html>
 <head>
 
-<link href="../css/login/signup.css" rel="stylesheet" type="text/css">
+<link href="../css/login/login.css" rel="stylesheet" type="text/css">
  <jsp:include page="../include/header.jsp"></jsp:include>
  
  	<link rel="stylesheet" href="../css/style/style.css">
@@ -47,51 +47,49 @@
               </li>
             </ul>
   </div>
-  <!--여기까지 기본 위 배너 입니다!-->
-     <div class="signup_box">
+     <!--여기까지 기본 위 배너 입니다!-->
+<div class="login_box">
+   <div class="center">       
+    <h1>통합로그인</h1>	
+		<form id="login_form" method="post">
+		   <div class="txt_field">
+          	<input type="text" name="id" required>
+         	 <span></span>
+         	 <label>아이디</label>
+        </div>
+			  <div class="txt_field">
+        	  <input type="password" name="passwd" required>
+        	  <span></span>
+         	 <label>비밀번호</label>
+        </div>
+
       
-      <div class="center">
-       <h1>회원가입</h1>
-       <form id="signup_form" method="post">
-         <input type="hidden" name="checkId">
-         <div class="txt_field">								
-           <input type="text" name="id" required>							
-           <label>아이디:</label>		
-           <span><button type="button" onclick="check_id_Async()">중복확인</button></span>			
-         </div>
-         <div class="txt_field">
-           <input type="password" name="passwd" required>
-           <p>*(특수문자, 문자, 숫자 포함 형태의 8~15자리 이내)</p>							
-           <label>비밀번호:</label>
-         </div>						
-         
-         <div class="txt_field">				
-           <input type="password" name="passwd_confirm" required>
-           <span></span>
-           <label>비밀번호 확인:</label>
-         </div>
-         <div class="txt_field">				
-           <input type="text" name="email" required>
-           <span></span>
-           <label>이메일:</label>
-         </div>			
-         <div class="txt_field">				
-           <input type="text" name="tel" required>
-           <span></span>
-           <label>전화번호:</label>
-         </div>       
-         <div class="pass"></div>
-              <input type="submit" value="회원가입" onclick="signup()">			
-          <div class="signup_link">
-               <a href="/login.html">로그인 하러 가기</a>  
-           </div> 
-       </form>
-     
- </div>
- </div>
+			 <div class="pass"></div>
+        <input type="submit" value="Login" onclick="login()">
+      </form>
 
-     <!-- 제일 최하단 -->
+        <div class="signup_link">
+          	<a href="/signup">회원가입</a>  <a href="/findid">아이디찾기</a>  <a href="/login" onclick="findpw()">비밀번호찾기(문의)</a>
+        </div>
+      </div>
+    
+      
 
+        <div class="center2">       
+            <h1>소셜로그인</h1>	
+              <form id="login_form" method="post">
+                <section class="Easy-sgin-in-wrap">
+                    <ul class="sign-a-list">
+                        <li class="na"><a href="#"><img src="img/login/kakao.png" alt="카카오" style="height: 45px; width: 45px;" /><i class="fas fa-kakaocorp"></i><span>카카오톡 계정으로 로그인</span></a></li>
+                        <li class="ka"><a href="#"><img src="img/login/naver.png" class="naver_img"alt="네이버" style="height: 45px; width: 45px;"><i class="fab fa-facebook-square"></i><span>네이버 계정으로 로그인</span></a></li>                        
+                    </ul>
+                    
+                </section>
+                </form>
+              </div>
+		  
+    </div>
+<!-- 제일 최하단 -->
 <div class="bottom">
     <!--고객센터-->
     <hr class="lhr5"/>

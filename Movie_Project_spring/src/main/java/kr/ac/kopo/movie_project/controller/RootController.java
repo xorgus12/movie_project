@@ -35,12 +35,12 @@ public class RootController {
 		}
 		return "redirect:.";
 	}
-	@GetMapping("/login/signup")
+	@GetMapping("/signup")
 	public String signup() {
 		return path+"signup";
 	}
 
-	@PostMapping("/login/signup")
+	@PostMapping("/signup")
 	public String signup(Member member,RedirectAttributes ra) {
 		memberservice.add(member);
 		
