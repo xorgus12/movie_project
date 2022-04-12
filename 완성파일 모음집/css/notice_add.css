@@ -144,38 +144,149 @@ column-width: 15em;
 padding: 2em 12em;
 }
 /*여기까지 기본 위 배너 css입니다!*/
-.container{
-width: 1000px;
-  height: 1100px; 
-  position: relative;  
+
+.title_1{
+  height: 10rem;
+position: relative;
+z-index:-1;
+}
+.sub_text2{
+  position: relative;
+  top: 70%;
+  transform: translateY(-70%);
+  text-align: left;
+  color: black;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.sub_text1{
+  position: relative;
+  top: 43%;
+  text-align: left;
+  color: black;
+  font-style: normal;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.search{
+  height: 4rem;
+}
+.search_move_1{
+  position: relative;
+  left: 54%;
+  width: 9rem;
+}
+.search_move_2{
+  position: relative;
+  left: 56.9%;
+  width: 15rem;
+}
+.search_move_3{
+  position: relative;
+  left: 54.63%;
+  width: 10rem;
+}
+.btn-search{
+  background-color: #336699;
+  color: white;
+  border-radius: 0px;
+}
+.control{
+  border-radius: 0px;
+}
+
+/* 위아래 같음! */
+
+.add_info{
+width: 100%;
+height: 30%;
+}
+
+.add_button{
+position: relative;
+width: 12rem;
+height: 3rem;
+left: 77%;
+top: 50px;
+font-style: normal;
+font-family: 'Nanum Gothic', sans-serif;
+font-weight: 400;
+font-size: 1rem;
+}
+.end_button{
+border: none;
+outline: none;
+padding: 5px 20px;
+background-color: #336699;
+color: white;
+}
+.back_button{
+border: none;
+outline: none;
+padding: 5.3px 20px;
+position: absolute;
+right: -1px;
+background-color: #336699;
+color: white;
+}
+.formName{
+font-style: normal;
+font-family: 'Nanum Gothic', sans-serif;
+font-weight: 600;
+font-size: 1.7rem;
+}
+.fileDelete{
+margin: 2px;
+}
+.grade{
+padding: 0.7rem 0.75rem;
+color: #212529;
+background-color: #fff;
+
+}
+.passwod{
+width: 50%;
+}
+
+.lock{
+display: none;
+}
+.lock_case{
+margin: 3rem;
+height: 30rem;
+width: 30rem;
+position: relative;
+top: 24rem;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.lock_text{
+height: 2rem;
+margin: 2rem;
+}
+.lock_text_2{
+height: 2rem;
+margin: 2rem;
+margin-left: 8rem;
+}
+.top{
+margin-top: 30px;
+}
+.inner_case {
+  position: relative;
+  height: 100%;
+  width: 62.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
-.add_box{
-  position: relative;
-  padding: 60px 0 50px;
-  font-size: 35px;
-  font-weight: 700;
-  text-align: center;
-}
-.form-floating{
-  text-align: left;
-  height: 100%;
-  width: 100%;
-}
-.add_setbutton{
-  text-align: center;
-  padding: 10%;
-}
-.add_setbutton a{
-  padding-left: 2%;
-}
 
 
-.form-control{
-  height: 100%;
-  width: 100%;
-}
+
+
+
 
 /*여기까지 기본 위 배너 css입니다!*/
 /* bottom */
@@ -254,3 +365,5 @@ width: 1000px;
     left: 45px;
   }
   /* bottom */
+
+ 

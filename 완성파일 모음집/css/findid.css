@@ -146,17 +146,18 @@ padding: 2em 12em;
 /*여기까지 기본 위 배너 css입니다!*/
 .findid_box{    
   width: 1000px;
-  height: 1000px; 
+  height: 750px; 
   position: relative;
   left: 52%;
   transform: translateX(-50%);
 }
 .center{
   position: relative;
-  top: 30%;
+  top: 45%;
   left: 45%;
   transform: translate(-50%, -50%);
   width:670px;
+  height: 370px;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
@@ -238,7 +239,7 @@ input[type="submit"]:hover{
   transition: .5s;
 }
 .signup_link{
-  margin: 15px 0;
+  margin: 20px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;  
