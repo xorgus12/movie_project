@@ -10,7 +10,11 @@
    
    <insert id="add">
       INSERT INTO member
-      VALUES(#{id}, PASSWORD(#{passwd}),#{name},#{tel},#{email},#{grade},#{cinemaCode})
+      VALUES(#{id}, PASSWORD(#{passwd}),#{userName},#{tel},#{email},1,NULL)
    </insert>
-
+<select id="check_id" resultType="Integer">
+   select count(*)
+   from member
+   where id=#{id}
+   </select>
 </mapper>

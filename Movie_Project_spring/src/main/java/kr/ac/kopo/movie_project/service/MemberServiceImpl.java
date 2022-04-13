@@ -11,13 +11,17 @@ public class MemberServiceImpl implements MemberService {
 	MemberDao dao;
 	@Override
 	public boolean login(Member member) {
-		Member item=dao.item(member);
+		Member item=dao.login(member);
 		if(item!=null) {
 			member.setId(item.getId());
 			member.setPasswd(null);
-			member.setGrade(item.getGrade());
-			member.setName(item.getName());
+			member.setUserName(item.getUserName());
 			member.setTel(item.getTel());
+			member.setEmail(item.getEmail());
+			member.setGrade(item.getGrade());
+			if(item.getCinemaCode()!=null) {
+				member.setCinemaCode(item.getCinemaCode());
+			}
 			return true;
 		}
 		return false;
@@ -25,5 +29,12 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public void add(Member member) {
 		dao.add(member);
+	}
+	@Override
+	public boolean checkId(String id) {
+		if(dao.checkId(id)==0)
+			return true;
+		else
+		return false;
 	}
 }

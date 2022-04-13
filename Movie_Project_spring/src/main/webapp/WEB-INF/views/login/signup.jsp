@@ -1,8 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+
+	
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Project movie studio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <jsp:include page="../include/header.jsp"></jsp:include>
 <link rel="stylesheet" href="../css/login/signup.css">
 <script>
@@ -70,14 +77,27 @@
 			form.passwd.focus();
 			return;
 		}
+		if (form.userName.value == "") {
+			alert("사용자 이름을 입력 해 주세요");
+			form.userName.focus();
+			return;
+		}
+		if (form.tel.value == "") {
+			alert("전화번호를 입력 해 주세요");
+			form.tel.focus();
+			return;
+		}
+		if (form.email.value == "") {
+			alert("이메일을 입력 해 주세요");
+			form.email.focus();
+			return;
+		}
+		
 		form.submit();//회원가입 을 타입으로 따로 지정해줘서 결과값 전달을 해줘야함
 	}
 	window.onload = function() {
 		//여기서 함수까진 들어가는데 답은 못받음.
 		var s = '${msg}';
-		if (s == 'false') {
-			alert("직원코드가 올바르지 않습니다.");
-		}
 		var checklogin = '${checkLogin}';
 		if (checklogin == 'true') {
 			alert("회원가입이 완료되었습니다!\n 로그인을 해주세요");
@@ -149,19 +169,25 @@
            <label>비밀번호 확인:</label>
          </div>
          <div class="txt_field">				
-           <input type="text" name="email" required>
+           <input type="text" name="userName" required>
            <span></span>
-           <label>이메일:</label>
-         </div>			
+           <label>사용자 이름:</label>
+         </div>		
          <div class="txt_field">				
            <input type="text" name="tel" required>
            <span></span>
            <label>전화번호:</label>
-         </div>       
+         </div>  
+         <div class="txt_field">				
+           <input type="text" name="email" required>
+           <span></span>
+           <label>이메일:</label>
+         </div>
+     
          <div class="pass"></div>
               <input type="submit" value="회원가입" onclick="signup()">			
           <div class="signup_link">
-               <a href="/login.html">로그인 하러 가기</a>  
+               <a href="../">로그인 하러 가기</a>  
            </div> 
        </form>
      

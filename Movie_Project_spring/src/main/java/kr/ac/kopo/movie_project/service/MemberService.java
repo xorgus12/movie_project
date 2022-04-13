@@ -8,4 +8,6 @@ public interface MemberService {
 
 	void add(Member member);
 
+	boolean checkId(String id);
+
 }

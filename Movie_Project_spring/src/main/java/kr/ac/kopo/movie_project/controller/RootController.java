@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.ac.kopo.movie_project.model.Member;
@@ -29,10 +30,16 @@ public class RootController {
 	}
 	@PostMapping("/login")
 	public String login(Member member,HttpSession session) {
+		System.out.println(member.getPasswd());
+		System.out.println(member.getId()+"<--아이디 위 패스워드");
 		if(memberservice.login(member)) {
 			session.setAttribute("member", member);
-			return "redirect:../";
+			System.out.println(member.getPasswd());
+			System.out.println(member.getId()+"<--아이디 위 패스워드");
+			return "redirect:.";
 		}
+		System.out.println(member.getPasswd());
+		System.out.println(member.getId()+"<--[실패]아이디 위 패스워드");
 		return "redirect:.";
 	}
 	@GetMapping("/signup")
@@ -43,10 +50,16 @@ public class RootController {
 	@PostMapping("/signup")
 	public String signup(Member member,RedirectAttributes ra) {
 		memberservice.add(member);
-		
 		ra.addFlashAttribute("msg", "회원가입이 완료 되었습니다");
-		
 		return "redirect:.";
+	}
+	@ResponseBody
+	@GetMapping("/checkId")
+	public String checkId(String id) {
+
+		if(memberservice.checkId(id))
+			return "OK";
+		else return "FAIL";
 	}
 
 	@RequestMapping("/logout")

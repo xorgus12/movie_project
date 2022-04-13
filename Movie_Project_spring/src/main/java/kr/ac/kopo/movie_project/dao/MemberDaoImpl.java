@@ -11,7 +11,7 @@ public class MemberDaoImpl implements MemberDao {
 	SqlSession sql;
 
 	@Override
-	public Member item(Member member) {
+	public Member login(Member member) {
 		return sql.selectOne("member.login", member);
 	}
 
@@ -20,5 +20,8 @@ public class MemberDaoImpl implements MemberDao {
 		sql.insert("member.add", member);		
 
 	}
-
+	@Override
+	public int checkId(String id) {
+		return sql.selectOne("member.check_id", id);
+	}
 }

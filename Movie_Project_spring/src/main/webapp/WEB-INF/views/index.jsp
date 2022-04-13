@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
         <jsp:include page="include/header.jsp"></jsp:include>
         
     <link rel="stylesheet" href="css/style/style.css">
