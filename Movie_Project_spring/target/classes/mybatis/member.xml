@@ -10,7 +10,7 @@
    
    <insert id="add">
       INSERT INTO member
-      VALUES(#{id}, PASSWORD(#{passwd}),Null,#{name},#{tel},#{nickname},#{address})
+      VALUES(#{id}, PASSWORD(#{passwd}),#{name},#{tel},#{email},#{grade},#{cinemaCode})
    </insert>
 
 </mapper>

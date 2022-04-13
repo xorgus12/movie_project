@@ -6,6 +6,7 @@ public class MovieAdmin {
 	private String bigCity;
 	private String littleCity;
 	private String tel;
+	private String theaterName;
 	public String getCinemaCode() {
 		return cinemaCode;
 	}
@@ -35,6 +36,12 @@ public class MovieAdmin {
 	}
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+	public String getTheaterName() {
+		return theaterName;
+	}
+	public void setTheaterName(String theaterName) {
+		this.theaterName = theaterName;
 	}
 
 }

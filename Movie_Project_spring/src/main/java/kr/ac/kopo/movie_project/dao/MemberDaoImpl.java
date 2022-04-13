@@ -12,12 +12,12 @@ public class MemberDaoImpl implements MemberDao {
 
 	@Override
 	public Member item(Member member) {
-		return sql.selectOne("partner.login", member);
+		return sql.selectOne("member.login", member);
 	}
 
 	@Override
 	public void add(Member member) {
-		sql.insert("partner.add", member);		
+		sql.insert("member.add", member);		
 
 	}
 
