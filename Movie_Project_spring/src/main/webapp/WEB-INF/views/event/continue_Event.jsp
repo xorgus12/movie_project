@@ -1,9 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
  <jsp:include page="../include/header.jsp"></jsp:include>
 <link href="../css/event.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/style/style.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -48,12 +52,22 @@
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
-    <div class="title_right">
-      <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
-      <div class="login_link"><a href="../../../../center" style="color: black;">고객센터</a></div>
-      <div class="login_link"><a href="../../../../login" style="color: black;">로그인</a></div>
-    </div>
-  </div>
+<div class="title_right">
+	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
+	            </div>
+	            <c:if test="${sessionScope.member.grade==1}">
+	             <div class="title_plus_text">${sessionScope.member.userName} 사용자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="myPage">마이페이지</a></div>
+	             </c:if>
+	             <c:if test="${sessionScope.member.grade==2}">
+	             <div class="title_plus_text">${sessionScope.member.userName} 영화 관리자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="">영화관 관리</a></div>
+	             </c:if>
+	             <c:if test="${sessionScope.member.grade>=10}">
+	             <div class="title_plus_text">${sessionScope.member.userName} 웹 관리자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="">웹 관리</a></div>
+	             </c:if>
+        </div>
   <div class="black_box">
             <ul id="main-menu">
             <li><a href="../../../../ticket/Ticketing">예매</a>
@@ -64,9 +78,8 @@
               </li>
               <li><a href="../../../../movie_info/NowPlayRank">영화</a>
                 <ul id="sub-menu">
-                  <li><a href="../../../../movie_info/NowPlayRank" aria-label="subemnu">현재 상영작</li></a>
-                  <li><a href="../../../../movie_info/Expected" aria-label="subemnu">상영예정작</li></a>
-                  <li><a href="../../../../movie_info/MovieGuide" aria-label="subemnu">영화안내</li></a>
+                  <li><a href="../../movie_info/NowPlayRank" aria-label="subemnu">현재 상영작</a></li>
+                  <li><a href="../../movie_info/Expected" aria-label="subemnu">상영예정작</a></li>
                 </ul>
               </li>
               <li><a href="../../../../event/continue_Event">이벤트</a>

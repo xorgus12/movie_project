@@ -1,4 +1,14 @@
 /* 위 배너 */
+@charset "UTF-8";
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding: 0px;
+  color: #000;
+}
 #main-menu{
     list-style: none;
     padding-left: 0px;
@@ -40,6 +50,7 @@
     position: relative;
     left: 10px;
     top: 4px;
+    color: white;
 }
 .title_right{
     font-size: 14px;

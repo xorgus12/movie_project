@@ -49,11 +49,26 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  a {
-      text-decoration: none;
-    
-    }
+a {
+	text-decoration: none;
+}
   
-    hr{
-      margin: 0;
-    }
+hr{
+	margin: 0;
+	}
+.title_name{
+	font-size: 32px;
+	font-weight: 700;
+	font-family : 'Noto Sans KR';
+}
+.title_plus_text{
+	color: black;
+    position: relative;
+    left: 75%;
+    top: 16%;
+    width: 265px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+   	
+}

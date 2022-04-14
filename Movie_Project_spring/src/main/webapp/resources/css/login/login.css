@@ -232,11 +232,8 @@ padding: 2em 12em;
   justify-content: flex-end;
   width:calc(1090px - 300px);
   line-height: 86px;
-  
-
+ 
 }
-
-
 .nav > li {
   margin-left: 130px;
   
@@ -282,7 +279,7 @@ padding: 2em 12em;
   height: 400px;
   background: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px rgb(0 0 0 / 5%);
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
 
 }
 .center2{
@@ -294,7 +291,7 @@ padding: 2em 12em;
   height: 400px;
   background: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px rgb(0 0 0 / 5%);
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 10%);
 
   }
 .center h1{

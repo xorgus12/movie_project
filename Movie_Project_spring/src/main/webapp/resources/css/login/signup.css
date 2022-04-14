@@ -66,6 +66,7 @@ a {
   transform: translateY(-50%);
   letter-spacing: 1px;
 }
+
 .login_link{
   position: relative;
   left: 4%;
@@ -157,22 +158,22 @@ padding: 2em 12em;
 
 .signup_box{
   width: 1000px;
-  height: 1000px; 
+height: 900px;
   position: relative;
   left: 52%;
   transform: translateX(-50%);
 }
 .center{
   position: relative;
-    bottom: 10%;
+    bottom: 15%;
     left: 45%;
     transform: translate(-50%, 38%);
-    width: 550px;
-    height: 600px;
+    width: 550px;    
+    height: 689px;
     background: white;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
-    box-shadow: 11px 10px 15px rgb(0 0 0 / 5%);
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 10%);
+    box-shadow: 11px 10px 15px rgb(0 0 0 / 10%);
 
 }
 .center h1{

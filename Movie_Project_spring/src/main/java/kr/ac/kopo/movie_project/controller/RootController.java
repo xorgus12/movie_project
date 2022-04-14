@@ -21,27 +21,29 @@ public class RootController {
 	MemberService memberservice;
 	
 	@RequestMapping("/")
-	public String index() {
+	public String index(Member member, HttpSession session) {
+		if(session.getAttribute("member")==null) {
+			member.setGrade(0);
+			session.setAttribute("member",member);
+			}
 		return "index";
 	}
+	
 	@GetMapping("/login")
 	public String login() {
 		return path+"login"; 
 	}
 	@PostMapping("/login")
 	public String login(Member member,HttpSession session) {
-		System.out.println(member.getPasswd());
-		System.out.println(member.getId()+"<--아이디 위 패스워드");
 		if(memberservice.login(member)) {
 			session.setAttribute("member", member);
-			System.out.println(member.getPasswd());
-			System.out.println(member.getId()+"<--아이디 위 패스워드");
-			return "redirect:.";
+			String target=(String) session.getAttribute("target");
+			return "redirect:"+(target==null?"/":target);
 		}
-		System.out.println(member.getPasswd());
-		System.out.println(member.getId()+"<--[실패]아이디 위 패스워드");
-		return "redirect:.";
+		System.out.println("실패");
+		return "redirect:login";
 	}
+
 	@GetMapping("/signup")
 	public String signup() {
 		return path+"signup";
