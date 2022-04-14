@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>SIGNUP</title>
+<title>LOGIN</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<link href="css/signup.css" rel="stylesheet" type="text/css">
+<link href="css/eventinfo.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png"  href="img/root/favicon2.png"/>
 <title>Project movie studio</title>
@@ -47,49 +47,47 @@
         </ul>
 </div>
      <!--여기까지 기본 위 배너 입니다!-->
-     <div class="signup_box">
-      
-      <div class="center">
-       <h1>회원가입</h1>
-       <form id="signup_form" method="post">
-         <input type="hidden" name="checkId">
-         <div class="txt_field">								
-           <input type="text" name="id" required>							
-           <label>아이디:</label>		
-           <span><button type="button" onclick="check_id_Async()">중복확인</button></span>			
-         </div>
-         <div class="txt_field">
-           <input type="password" name="passwd" required>
-           <p>*(특수문자, 문자, 숫자 포함 형태의 8~15자리 이내)</p>							
-           <label>비밀번호:</label>
-         </div>						
-         
-         <div class="txt_field">				
-           <input type="password" name="passwd_confirm" required>
-           <span></span>
-           <label>비밀번호 확인:</label>
-         </div>
-         <div class="txt_field">				
-           <input type="text" name="email" required>
-           <span></span>
-           <label>이메일:</label>
-         </div>			
-         <div class="txt_field">				
-           <input type="text" name="tel" required>
-           <span></span>
-           <label>전화번호:</label>
-         </div>       
-         <div class="pass"></div>
-              <input type="submit" value="회원가입" onclick="signup()">			
-          <div class="signup_link">
-               <a href="/login.html">로그인 하러 가기</a>  
-           </div> 
-       </form>
-     
- </div>
- </div>
-
      <!-- 제일 최하단 -->
+  <div class="gray_main">
+    <div class="whitebox">
+      <div class="whitebox_info">
+        <div class="whitebox_info_text">이벤트</div>
+      </div>
+      <div class="event_info_title_box">
+        <div class="event_info_title">
+          <span class="event_info_title_text">제목을입력하세요</span>
+          <p class="event_info_title_date">2022년4월11일 &nbsp 오후08:27 &nbsp | &nbsp 추천:0 &nbsp |&nbsp 조회수:1</p>
+        </div>
+        <hr class="event_border2" style="border: solid 1px #dddddd;" width="1000px">
+      </div>
+
+      <div class="whitebox2">
+        <div class="whitebox2_photo">사진을 넣어주세요</div>
+        <div class="whitebox2_info">
+          <p>이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+            이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요이벤트 내용을 써주세요
+          </p>
+
+        </div>
+        <div class="back_button_box">
+          <button class="back_button">목록으로가기</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
 
 <div class="bottom">
     <!--고객센터-->
@@ -104,7 +102,6 @@
             <br><br>사업자 등록번호 : 123-45-6789<br>TEL : 02-1234-5678 Email : customer@projectCinema.co.kr
         </div>
         <div class="bottom_text_4">© ProjectCinema Co., Ltd All rights reservedv.</div>
-    </div>
     </div>
 </body>
 </html>
