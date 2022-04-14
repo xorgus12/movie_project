@@ -7,6 +7,7 @@
 <head>
  <jsp:include page="../include/header.jsp"></jsp:include>
   <link href="../css/payment.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/style/style.css">
   <script>
 $(function(){
       $(".credit").click(function(){
