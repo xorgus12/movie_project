@@ -2,32 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>notice_add</title>
+<title>Project movie studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <link href="css/notice_add.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png"  href="img/root/favicon2.png"/>
-
-<!-- 서머노트를 위해 추가해야할 부분 -->
-<script src="js/summernote-lite.js"></script>
-<script src="js/summernote-ko-KR.js"></script>
-<link rel="stylesheet" href="js/summernote-lite.css">
-<!--  -->
-</head>
+<link
+   href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
+   rel="stylesheet">
+<script
+   src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <script>
-$(document).ready(function () {
-  console.log($.summernote.options);
-  // 실행시 언어 설정을 한글로 설정 
-  $.summernote.options.lang = 'ko-KR';
-  $.summernote.options.airMode = false;
-});
+   $(function() {
+      $('#summernote').summernote();
+   })
+    </script>
 
-var a = $('#summernote');
-
-</script>
 </head>
 <body>
-    <div class="box_case"><!--좌우크213기조절-->
+    <div class="box_case"><!--좌우크기조절-->
       <a href="" class="main_back">
         <div class="title">
               <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘"/>
@@ -64,45 +59,44 @@ var a = $('#summernote');
         </ul>
 </div>
      <!--여기까지 기본 위 배너 입니다!-->
-     <div class="container mb-1">
-      <div class="add_box">공지사항 등록</div>
-      <form method="post" class="mt-4">
-        <div class="form-floating mt-2">
-          <label>제목</label>	
-          <div >				
-          <input type="text" name="title" class="form-control" placeholder="제목">
-          </div>      
-          <label>작성자</label>		
-          <div >					
-          <input type="text" name="writer" class="form-control" placeholder="작성자">		
-       		</div>
-          <br>   
-          <div class="file-upload">
-            <label for="ex_file">업로드</label>
-            <input type="file" id="ex_file"> 
-            <input type="date" name="ragdate">
-        </div>        
-        
-        </div>	
-        <br>	
-        <label>내용</label>			
-        <div class="mt-2">
-          <textarea class="summernote" name="editordata" rows="25" cols="149"></textarea>    
-        </div>
-        
-        <div>        	
-          <div class="add_setbutton"><input type="submit" class="btn btn-primary" value="등록하기">
-            <a href="notice.html" class="btn btn-sm btn-primary">목록가기</a></div>						
-        </div>     
+     <div class="title_1">
+      <div class="inner_case">
+         <div class="sub_text2">공지사항 등록</div>
+      </div>
+   </div>
+   <div class="inner_case" style="padding-bottom: 10rem;">
+      <form method="post" enctype="multipart/form-data">
+         <div class="form-floating">
+            <div class="formName">공지 제목</div>
+            <input type="text" id="noticeName" name="noticeName"
+               class="form-control" placeholder="공지제목"> <label
+               style="padding: 55px 1.25rem;">제목:</label>
+         </div>
+
+         <div class="add_info">
+            <label class="noticeInfo">공지 내용</label>
+            <textarea rows="20" cols="113" name="noticeInfo" id="summernote"></textarea>
+            <!-- <input type="text" name="noticeInfo" /> -->
+         </div>
+         <input type="hidden" name="id" class="id"
+            value="${sessionScope.partner.id}" />
+         <div class="grade">
+            <label>공개범위:  </label>
+            <input type="radio" name="grade" id="blankRadio1" value="0">전체</input>
+            <input type="radio" name="grade" id="blankRadio1" value="1">회원</input>
+         </div>
+         <div>
+            <label>공지파일:<span id="add_image"
+               class="btn btn-outline-primary btn-sm">추가</span></label> <input
+               type="file" name="noticeFile" class="form-control file">
+         </div>
+         
+         <div class="add_button">
+            <button class="end_button">등록</button>
+            <a href="." class="back_button">뒤로가기</a>
+         </div>
       </form>
-    </div>
-
-
-
-
-
-
-
+   </div>
      
 
 

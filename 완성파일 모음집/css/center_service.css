@@ -164,7 +164,7 @@ padding: 2em 12em;
 
 .center_box{
     width: 1000px;
-    height: 1350px; 
+    height: 1300px; 
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -274,37 +274,44 @@ padding: 2em 12em;
   position: relative;
   width: 100%;
   height: 250px;
-  top: 8%;
+  top: 8%; 
+  
 }
+
+
 .sub_box{
   position: relative;
-  left: 130px;
-  left: 150px;
+  left: 5%;
+  
   float: left;
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   background-image: url(../img/center_service/planning.png);
+  
 }
 
 
 .sub_box1{
   position: relative;
-  left: 250px;
+  left: 34%;
   float: left;
-  top: 25px;
-  width: 140px;
-  height: 140px;
-  background-image: url(../img/center_service/faq.png);
+  top: 8px;
+  width: 95px;
+  height: 130px;
+  background-image: url(../img/center_service/FAQSEQ.png);
 }
 
 .sub_box2{
   position: relative;
-  left: 330px;
+  left: 60%;
   float: left;
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   background-image: url(../img/center_service/inquirys.png);
 }
+
+
+
 
 
 

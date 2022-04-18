@@ -280,23 +280,36 @@ padding: 2em 12em;
     text-align: center
 }
 .faq_table td{
-    padding: 15px 0;
+    padding: 5px 0;
     height: 60px;
     border-bottom: 1px solid #e5e5e5;
     vertical-align: middle;
     line-height: 20px;
     text-align: left;
 }
+.faq_content{
+  width: 600px;
+  height: auto;
+}
 
 details {  
   border-radius: 4px;
   padding: .5em .5em 0;
+ 
 }
 
 summary {
   font-weight: bold;
-  margin: -.5em -.5em 0;
+  margin: 1em -.5em 0;
   padding: .5em;
+
+  
+}
+.button_down {
+  position: relative;
+  left: 88%;
+  bottom: 20px;
+  background-image: url(../img/faq/arrows.png);
 }
 
 details[open] {
