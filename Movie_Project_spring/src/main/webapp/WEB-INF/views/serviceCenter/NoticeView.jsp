@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/notice.css" rel="stylesheet" type="text/css">
+<link href="../css/notice.view.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../css/style/style.css">
 </head>
 <body>
@@ -59,8 +59,20 @@
   <!--여기까지 기본 위 배너 입니다!-->
 
      <div class="notice_box">
-
-        <div class="notice_seq">공지사항</div>          
+        <div class="notice_seq">공지사항</div>
+          <div class="notice_keyword">
+               
+              <select name="search" class="option_select" >
+                <option value="0">전체</option>
+                <option value="1">제목</option>
+                <option value="2">작성자</option>
+                <option value="3">등록일</option>              
+              </select>   
+                      
+            <input type="text" name="keyoword" >
+            <button class="btn btn-dark btn-sm">검색</button>
+          </div>
+                 
           <div class="notice_area">
           
              <table class="tb">
@@ -73,17 +85,59 @@
                   <tr>
                       <th>번호</th>
                       <th>제목</th>
+                      <th>작성자</th>
                       <th>등록일</th>
+                      <th>조회수</th>
+                      <th>관리</th>
+                      
                   </tr>
               </thead>
               <tbody id="notice_midle">
                 <tr>
-                    <td>111111</td>
-                    <td><a href="notice_list.html">영화예매 취소좀</a></td>
-                    <td>2022-03-29</td>
+                    <td>1</td>
+                    <td><a href="notice_list.html">영화예매 취소환불에 대해</a></td>
+                    <td>관리자</td>
+                    <td>2022-04-21</td>
+                    <td></td>
+                    <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
                 </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="notice_list.html">영화예매 확인서</a></td>
+                  <td>관리자</td>
+                  <td>2022-02-02</td>
+                  <td></td>
+                  <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="notice_list.html">영화좌석 오류상황</a></td>
+                <td>관리자</td>
+                <td>2022-01-25</td>
+                <td></td>
+                <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="notice_list.html">새해를 맞이하는 인사</a></td>
+              <td>관리자</td>
+              <td>2022-01-01</td>
+              <td></td>
+              <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="notice_list.html">영화관 등록 추가</a></td>
+            <td>관리자</td>
+            <td>2021-12-01</td>
+            <td></td>
+            <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+        </tr>
               </tbody>                          
           </table>
+         </div>
+         <div class="add_keyword">
+           <button class="btn btn-outline-primary">등록</button>
          </div>
          <!-- 페이징디자인 -->
          <div class="pager ">
@@ -107,7 +161,6 @@
          </div>
         </div>
         </div>
-
 
 
 

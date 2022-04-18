@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/kr/ac/kopo/movie_project/controller/RootController.java=UTF-8
+encoding//src/main/java/kr/ac/kopo/movie_project/controller/ServiceCenterController.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/event/continue_Event.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/event/end_Event.jsp=UTF-8
