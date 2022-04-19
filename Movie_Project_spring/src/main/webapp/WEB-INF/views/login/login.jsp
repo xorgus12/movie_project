@@ -5,10 +5,10 @@
 <html>
 <head>
 
-<link href="../css/login/login.css" rel="stylesheet" type="text/css">
+<link href="../../resources/css/login/login.css" rel="stylesheet" type="text/css">
  <jsp:include page="../include/header.jsp"></jsp:include>
  
- 	<link rel="stylesheet" href="../css/style/style.css">
+ 	<link rel="stylesheet" href="../../resources/css/style/style.css">
 </head>
 <body>
   <div class="box_case">

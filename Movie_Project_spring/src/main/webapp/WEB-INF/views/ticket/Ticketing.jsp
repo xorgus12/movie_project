@@ -6,7 +6,7 @@
 
 <head>
  <jsp:include page="../include/header.jsp"></jsp:include>
-  <link href="../css/Ticketing.css" rel="stylesheet" type="text/css">
+  <link href="../css/ticket/Ticketing.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../css/style/style.css">
 </head>
 
@@ -15,15 +15,15 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../../img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
-	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
-	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
-	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
+	                <a href="../../such"><img src="../img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <div class="login_link"><a href="../../serviceCenter/CenterService" >고객센터</a></div>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="../../login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="../../logout">로그아웃</a></div></c:if>
 	            </div>
 	            <c:if test="${sessionScope.member.grade==1}">
 	             <div class="title_plus_text">${sessionScope.member.userName} 사용자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="myPage">마이페이지</a></div>
@@ -107,11 +107,11 @@
         </div>
         <div class="movie_audits">
           <div class="movie_">
-            <img src="img/ticketing/12세.png" alt="심의등급" class="movie_audits_photo">
+            <img src="../../img/ticketing/12세.png" alt="심의등급" class="movie_audits_photo">
             <div class="movie_name">&nbsp;&nbsp;&nbsp;영화명</div>
           </div>
           <div class="movie_">
-            <img src="img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
+            <img src="../../img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
             <div class="movie_name">&nbsp;&nbsp;&nbsp;영화명</div>
           </div>
         </div>
@@ -127,7 +127,7 @@
 
           <div class="movie_contact">
             <div class="movie_contact_sub1">
-              <img src="img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
+              <img src="../img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
               <div class="movie_name contact_name">영화명</div>
             </div>
             <div class="movie_contact_sub2">
@@ -136,7 +136,7 @@
           </div>
           <div class="movie_contact">
             <div class="movie_contact_sub1">
-              <img src="img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
+              <img src="../img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
               <div class="movie_name contact_name">영화명</div>
             </div>
             <div class="movie_contact_sub2">
@@ -146,7 +146,7 @@
 
           <div class="movie_contact">
             <div class="movie_contact_sub1">
-              <img src="img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
+              <img src="../img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
               <div class="movie_name contact_name">영화명</div>
             </div>
             <div class="movie_contact_sub2">
@@ -159,7 +159,7 @@
 
           <div class="movie_contact">
             <div class="movie_contact_sub1">
-              <img src="img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
+              <img src="../img/ticketing/15세.png" alt="심의등급" class="movie_audits_photo">
               <div class="movie_name contact_name">영화명</div>
             </div>
             <div class="movie_contact_sub2">
@@ -171,7 +171,7 @@
     </div>
     <div class="ticket_check_box">
       <div class="movie_poster">
-        <img src="img/ticketing/영화.png" alt="">
+        <img src="../img/ticketing/영화.png" alt="">
       </div>
       <div class="check_com">
         <div style="font-size: 18px; font-weight: 500;">영화를 선택하세요.<br><br></div>
@@ -179,7 +179,7 @@
         <div>영화일자를 선택하세요</div>
       </div>
       <div class="sitting">
-        <a href=""><button class="sitting_check btn btn-outline-danger">좌석 선택으로 넘어가기</button></a>
+        <a href="sit"><button class="sitting_check btn btn-outline-danger">좌석 선택으로 넘어가기</button></a>
       </div>
     </div>
   </div>

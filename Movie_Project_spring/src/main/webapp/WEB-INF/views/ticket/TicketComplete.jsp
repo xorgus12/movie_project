@@ -5,7 +5,7 @@
 <html>
 <head>
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/ticket_complete.css" rel="stylesheet" type="text/css">
+<link href="../css/ticket/ticket_complete.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../css/style/style.css">
 </head>
 <body>
@@ -13,15 +13,15 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
-	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
-	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
-	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
+	                <a href="../../such"><img src="../img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <div class="login_link"><a href="../../serviceCenter/CenterService" >고객센터</a></div>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="../../login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="../../logout">로그아웃</a></div></c:if>
 	            </div>
 	            <c:if test="${sessionScope.member.grade==1}">
 	             <div class="title_plus_text">${sessionScope.member.userName} 사용자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="myPage">마이페이지</a></div>
@@ -64,14 +64,14 @@
         <div class="complete_text">
           <div>예매번호: <span style="color: red;">00A00000000000</span></div>
           <div>※ 위 예매번호로 해당극장의 무인발권기/매표소에서 티켓을 찾으세요</div>
-          <div>영화: <img src="img/ticketing/19세.png" alt="연령제한" style="position: relative; top: 13px;"/>영화명</div>
+          <div>영화: <img src="../img/ticketing/19세.png" alt="연령제한" style="position: relative; top: 13px;"/>영화명</div>
           <div>극장: 극장명</div>
           <div>일시: 2022-03-29 (목) 17:20~19:27</div>
           <div>인원: 어린이1명</div>
           <div>좌석: A열 13번</div>
         </div>
       </div>
-      <div class="a_tag"><a href="" class="fail_link"><div class="fail_button"><br>예매 내역 확인</div></a></div>
+      <div class="a_tag"><a href="../myPage" class="fail_link"><div class="fail_button"><br>예매 내역 확인</div></a></div>
      </div>
 
 
