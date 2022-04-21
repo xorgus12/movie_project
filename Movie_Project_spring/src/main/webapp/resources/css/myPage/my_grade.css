@@ -14,6 +14,9 @@ a:hover {
 .main_back{
   display: flex;
 }
+body{
+	background-color:whitesmoke;
+}
 a {
    text-decoration: none;
    color:black;

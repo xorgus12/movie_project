@@ -11,6 +11,9 @@
 a:hover {
   color: black;
 }
+body{
+	background-color:whitesmoke;
+}
 .main_back{
   display: flex;
 }
@@ -197,7 +200,7 @@ padding: 2em 12em;
   
   .bottom_text_3 {
     position: relative;
-    color: #666666;
+    color: #a0a0a0;
     font-size: 0.72rem;
     text-align: left;
     font-style: normal;

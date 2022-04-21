@@ -64,7 +64,7 @@
         <div class="complete_text">
           <div>예매번호: <span style="color: red;">00A00000000000</span></div>
           <div>※ 위 예매번호로 해당극장의 무인발권기/매표소에서 티켓을 찾으세요</div>
-          <div>영화: <img src="../img/ticketing/19세.png" alt="연령제한" style="position: relative; top: 13px;"/>영화명</div>
+          <div>영화: <img src="../img/ticketing/19세.png" alt="연령제한"/>영화명</div>
           <div>극장: 극장명</div>
           <div>일시: 2022-03-29 (목) 17:20~19:27</div>
           <div>인원: 어린이1명</div>
