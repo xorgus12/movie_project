@@ -6,8 +6,12 @@
     <jsp:include page="include/header.jsp"></jsp:include> 
     <link rel="stylesheet" href="css/style/style.css">
     <link rel="stylesheet" href="css/mainpage.css">
-    <link rel="javascript" href="js/mainpage.js">
-        <style>
+    <script src="js/movie.js"></script>
+    <script> 
+    var rank={rank:10,rnum:4};//10개중 //2번
+    new movieprint(rank);
+    </script>
+    <style>
     	.title_plus_text{
     	color:white}
     </style>
@@ -71,13 +75,10 @@
     <div class="rank_view">
       <ul class="rank_list clear" style="list-style: none;">
             <li>
-              <div class="flip-card" id="M000126106"
-                onmouseover="javascript:fnMovieBlur('M000126106', '/M61/M06/M000126106_094624.jpg');">
+              <div class="flip-card" id="M000126106">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img
-                      src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M06/M000126106_094624.jpg/dims/thumbnail/170x245/optimize"
-                      alt="문폴">
+                    <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M06/M000126106_094624.jpg/dims/thumbnail/170x245/optimize"alt="문폴">
                     <div class="rl_info_box">
                       <p class="rank_num">1</p>
                     </div>
@@ -89,7 +90,7 @@
                     <div class="rl_info_box">
                       <p class="rank_num">1</p>
                       <div class="rl_btn_box">
-                        <a href="javascript:fnTicket('M000126106');" class="btn_rank_st">예매</a>
+                        <a href="" class="btn_rank_st">예매</a>
                         <a href="/MovieInfo/Index?mId=M000126106" class="btn_rank_st">정보</a>
                       </div>
                     </div>
@@ -99,7 +100,7 @@
             </li>
 
             <li>
-              <div class="flip-card" id="M000077286" onmouseover="javascript:fnMovieBlur('M000077286', '/M72/M86/M000077286_103345.jpg');">
+              <div class="flip-card">
                   <div class="flip-card-inner">
                       <div class="flip-card-front">
                           <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M72/M86/M000077286_103345.jpg/dims/thumbnail/170x245/optimize" alt="이상한 나라의 수학자">
@@ -112,7 +113,7 @@
                           <div class="rl_info_box">
                               <p class="rank_num">2</p>
                               <div class="rl_btn_box">
-                                      <a href="javascript:fnTicket('M000077286');" class="btn_rank_st">예매</a>
+                                      <a href="" class="btn_rank_st">예매</a>
                                   <a href="/MovieInfo/Index?mId=M000077286" class="btn_rank_st">정보</a>
                               </div>
                           </div>
@@ -121,7 +122,7 @@
               </div>
           </li>
           <li>
-            <div class="flip-card" id="M000126050" onmouseover="javascript:fnMovieBlur('M000126050', '/M60/M50/M00012605051_101632.jpg');">
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M60/M50/M00012605051_101632.jpg/dims/thumbnail/170x245/optimize" alt="더 배트맨">
@@ -134,7 +135,7 @@
                         <div class="rl_info_box">
                             <p class="rank_num">3</p>
                             <div class="rl_btn_box">
-                                    <a href="javascript:fnTicket('M000126050');" class="btn_rank_st">예매</a>
+                                    <a href="" class="btn_rank_st">예매</a>
                                 <a href="/MovieInfo/Index?mId=M000126050" class="btn_rank_st">정보</a>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
             </div>
         </li>
         <li>
-            <div class="flip-card" id="M000126151" onmouseover="javascript:fnMovieBlur('M000126151', '/M61/M51/M000126151_161206.jpg');">
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M51/M000126151_161206.jpg/dims/thumbnail/170x245/optimize" alt="나의 히어로 아카데미아 더 무비: 월드 히어로즈 미션">
@@ -156,7 +157,7 @@
                         <div class="rl_info_box">
                             <p class="rank_num">4</p>
                             <div class="rl_btn_box">
-                                    <a href="javascript:fnTicket('M000126151');" class="btn_rank_st">예매</a>
+                                    <a href="" class="btn_rank_st">예매</a>
                                 <a href="/MovieInfo/Index?mId=M000126151" class="btn_rank_st">정보</a>
                             </div>
                         </div>
@@ -165,7 +166,7 @@
             </div>
         </li>
         <li>
-            <div class="flip-card" id="M000125360" onmouseover="javascript:fnMovieBlur('M000125360', '/M53/M60/M000125360_095744.jpg');">
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M53/M60/M000125360_095744.jpg/dims/thumbnail/170x245/optimize" alt="스펜서">
@@ -178,7 +179,7 @@
                         <div class="rl_info_box">
                             <p class="rank_num">5</p>
                             <div class="rl_btn_box">
-                                    <a href="javascript:fnTicket('M000125360');" class="btn_rank_st">예매</a>
+                                    <a href="" class="btn_rank_st">예매</a>
                                 <a href="/MovieInfo/Index?mId=M000125360" class="btn_rank_st">정보</a>
                             </div>
                         </div>
@@ -241,9 +242,9 @@
        <a href="myPage/myPage">  <div class="mypage"></div> </a> 
 
     </div>
-    
 </div>
 <!-- 제일 최하단 -->
+
 <div class="bottom">
     <!--고객센터-->
     <hr class="lhr5" />

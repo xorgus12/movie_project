@@ -5,6 +5,8 @@ public class Movie {
 	private String cinemaCode;
 	private String theaterName;
 	private String movieTime;
+	private String movieNum;
+	
 	public String getMovieName() {
 		return movieName;
 	}
@@ -28,5 +30,11 @@ public class Movie {
 	}
 	public void setMovieTime(String movieTime) {
 		this.movieTime = movieTime;
+	}
+	public String getMovieNum() {
+		return movieNum;
+	}
+	public void setMovieNum(String movieNum) {
+		this.movieNum = movieNum;
 	}
 }
