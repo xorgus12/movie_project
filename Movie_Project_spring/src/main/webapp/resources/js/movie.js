@@ -9,6 +9,7 @@ function movieprint(rank){
     		success: result => {
     			console.log(` [성공] 영화번호: ${result.rank}`);
     			console.log(` [성공] 영화명: ${result.movieNm}`);
+    			console.log(` [성공] 영화개봉일: ${result.openDt}`);
 //{rnum=1, rank=1, rankInten=0, rankOldAndNew=OLD, movieCd=20212725, movieNm=신비한 동물들과 덤블도어의 비밀, openDt=2022-04-13, salesAmt=912978290, salesShare=42.5, salesInten=539279350, salesChange=144.3, salesAcc=7412444160, audiCnt=83940, audiInten=49437, audiChange=143.3, audiAcc=700600, scrnCnt=1375, showCnt=4413}
 //위 값이 넘어옴
     			if(result!=null){
