@@ -20,4 +20,5 @@ public class MypageController {
 	public String mygrade() {
 		return path+"myGrade";
 	}
+	
 }
