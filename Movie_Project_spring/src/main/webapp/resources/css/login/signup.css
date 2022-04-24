@@ -162,11 +162,11 @@ padding: 2em 12em;
 }
 .center{
   position: relative;
-    bottom: 10%;
+    bottom: 16%;
     left: 45%;
     transform: translate(-50%, 38%);
     width: 550px;
-    height: 600px;
+    height: 680px;
     background: white;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);

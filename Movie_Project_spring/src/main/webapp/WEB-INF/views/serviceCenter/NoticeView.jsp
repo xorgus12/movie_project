@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/notice.view.css" rel="stylesheet" type="text/css">
+<link href="../css/serviceCenter/notice.view.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../css/style/style.css">
 </head>
 <body>
@@ -14,12 +14,12 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <a href="such"><img src="../img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
 	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
 	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
 	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
@@ -95,49 +95,49 @@
               <tbody id="notice_midle">
                 <tr>
                     <td>1</td>
-                    <td><a href="notice_list.html">영화예매 취소환불에 대해</a></td>
+                    <td><a href="NoticeList">영화예매 취소환불에 대해</a></td>
                     <td>관리자</td>
                     <td>2022-04-21</td>
                     <td></td>
-                    <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+                    <td><a href="NoticeUpdate">수정</a> <a href="delete/">삭제</a></td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td><a href="notice_list.html">영화예매 확인서</a></td>
+                  <td><a href="NoticeList">영화예매 확인서</a></td>
                   <td>관리자</td>
                   <td>2022-02-02</td>
                   <td></td>
-                  <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+                  <td><a href="NoticeUpdate">수정</a> <a href="delete/">삭제</a></td>
               </tr>
               <tr>
                 <td>3</td>
-                <td><a href="notice_list.html">영화좌석 오류상황</a></td>
+                <td><a href="NoticeList">영화좌석 오류상황</a></td>
                 <td>관리자</td>
                 <td>2022-01-25</td>
                 <td></td>
-                <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+                <td><a href="NoticeUpdate">수정</a> <a href="delete/">삭제</a></td>
             </tr>
             <tr>
               <td>4</td>
-              <td><a href="notice_list.html">새해를 맞이하는 인사</a></td>
+              <td><a href="NoticeList">새해를 맞이하는 인사</a></td>
               <td>관리자</td>
               <td>2022-01-01</td>
               <td></td>
-              <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+              <td><a href="NoticeUpdate">수정</a> <a href="delete/">삭제</a></td>
           </tr>
           <tr>
             <td>5</td>
-            <td><a href="notice_list.html">영화관 등록 추가</a></td>
+            <td><a href="NoticeList">영화관 등록 추가</a></td>
             <td>관리자</td>
             <td>2021-12-01</td>
             <td></td>
-            <td><a href="update/${item.}">수정</a> <a href="delete/${item.}">삭제</a></td>
+            <td><a href="update/">수정</a> <a href="delete/">삭제</a></td>
         </tr>
               </tbody>                          
           </table>
          </div>
          <div class="add_keyword">
-           <button class="btn btn-outline-primary">등록</button>
+          <a href="NoticeAdd"><button class="btn btn-outline-primary">등록</button></a>
          </div>
          <!-- 페이징디자인 -->
          <div class="pager ">

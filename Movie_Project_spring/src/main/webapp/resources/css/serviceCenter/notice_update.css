@@ -145,16 +145,16 @@ column-width: 15em;
 padding: 2em 12em;
 }
 /*여기까지 기본 위 배너 css입니다!*/
-.container{
-width: 1000px;
-  height: 1100px; 
-  position: relative;  
-  left: 50%;
-  transform: translateX(-50%);
-}
-.add_box{
+.center_box{
+    width: 1000px;
+    height: 1350px; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.update_box{
   position: relative;
-  padding: 60px 0 50px;
+  padding: 60px 0 30px;
   font-size: 35px;
   font-weight: 700;
   text-align: center;
@@ -164,17 +164,35 @@ width: 1000px;
   height: 100%;
   width: 100%;
 }
-.add_setbutton{
+
+.form-floating>label{
+  position: relative;
+  padding: 1rem 0.2rem;
+}
+.update_setbutton{
   text-align: center;
-  padding: 10%;
+  padding: 2%;
 }
-.add_setbutton a{
-  padding-left: 2%;
+.update_addbutton{
+	color: #0d6efd;
+    border-color: #0d6efd;    
+    --text: #fff;
+    --font-size: 16px;    
+    padding: 12px 20px;   
+    line-height: var(--font-size);
+    border-radius: 24px;  
+    margin-right: 5%;
 }
+
 
 .form-control{
   height: 100%;
   width: 100%;
+}
+
+.btn-group-sm>.btn, .btn-sm {   
+    font-size: .875rem;
+    border-radius: .2rem;
 }
 
 .file-upload label {
@@ -189,6 +207,7 @@ width: 1000px;
   border: 1px solid #ebebeb;
   border-bottom-color: #e2e2e2;
   border-radius: .25em;
+  margin-right: 12px;
 }
 .file-upload input[type="file"] {  /* 파일 필드 숨기기 */
   position: absolute;

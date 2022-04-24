@@ -18,25 +18,31 @@ public class ServiceCenterController {
 		@GetMapping("/F&Q")
 		public String faq() {
 			
-			return "F&Q";
+			return path+"F&Q";
 		}
 		
-		@GetMapping("/noticeview")
+		@GetMapping("/NoticeView")
 		public String noticeview() {
 			
-			return "noticeview";
+			return path+"NoticeView";
 		}
 		
-		@GetMapping("/noticeadd")
+		@GetMapping("/NoticeList")
+		public String noticelist() {
+			
+			return path+"NoticeList";
+		}
+		
+		@GetMapping("/NoticeAdd")
 		public String noticeadd() {
 			
-			return "noticeadd";
+			return path+"NoticeAdd";
 		}
 		
-		@GetMapping("/noticeupdate")
+		@GetMapping("/NoticeUpdate")
 		public String noticeupdate() {
 			
-			return "noticeupdate";
+			return path+"NoticeUpdate";
 		}
 	}
 

@@ -141,6 +141,8 @@ section {
 column-width: 15em;
 padding: 2em 12em;
 }
+
+
 /*여기까지 기본 위 배너 css입니다!*/
 .login_box{
   width: 1000px;
@@ -423,11 +425,16 @@ input[type="submit"]:hover{
 }
 
 .Easy-sgin-in-wrap .sign-a-list li a span{	
-	font-size: 18px;
+  font-size: 18px;
   position: relative;
-  bottom: 14px;
+  top:1px;
 }
 
+.Easy-sgin-in-wrap .sign-a-list .ka{
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 .Easy-sgin-in-wrap .sign-a-list .na{
   position: relative;
   padding-top: 20px;

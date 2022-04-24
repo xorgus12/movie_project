@@ -31,7 +31,8 @@ public class RootController {
 	
 	@GetMapping("/login")
 	public String login() {
-		return path+"login"; }
+		return path+"login"; 
+		}
 	
 	
 	
@@ -70,6 +71,11 @@ public class RootController {
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:.";
+	}
+	
+	@GetMapping("/findid")
+	public String findid() {
+		return "findid";
 	}
 	
 	
