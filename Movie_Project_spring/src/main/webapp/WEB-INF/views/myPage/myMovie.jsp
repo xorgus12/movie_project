@@ -83,7 +83,7 @@ a:hover {
 
   <div class="grade_info_box" style="display: flex;">
     <div class="movie_box_left">
-      <img src="img/ticketing/영화.png" alt="" class="">
+      <img src="img/mypage/영화_small.png" alt="" class="">
     </div>
 
     <div class="movie_box_center">
@@ -141,8 +141,8 @@ a:hover {
             <br><br>사업자 등록번호 : 123-45-6789<br>TEL : 02-1234-5678 Email : customer@projectCinema.co.kr
         </div>
         <div class="bottom_text_4">© ProjectCinema Co., Ltd All rights reservedv.</div>
-    </div></div>
-
+    </div>
+    </div>
     <jsp:include page="../include/body.jsp"></jsp:include>
 </body>
 </html>

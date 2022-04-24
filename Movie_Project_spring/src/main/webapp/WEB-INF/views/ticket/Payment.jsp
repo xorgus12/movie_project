@@ -99,14 +99,14 @@ $(function(){
             <button value="삼성카드">삼성카드</button><button value="수협카드">수협카드</button><button value="시티카드">시티카드</button><button value="신한카드">신한카드</button><button value="우리카드">우리카드</button>
             <button value="현대카드">현대카드</button>
           </div>
-          <div class="credit_box_bottom">YES24 영화예매의 신용카드 결제서비스는 (주)케이지이니시스에서 제공합니다.</div>
+          <div class="credit_box_bottom">영화예매의 신용카드 결제서비스는 (주)케이지이니시스에서 제공합니다.</div>
         </div>
       </div>
     </div>
         <!--아래는 영화 선택 목록-->
         <div class="ticket_check_box">
           <div class="movie_poster">
-            <img src="img/ticketing/영화.png" alt="">
+            <img src="../img/ticketing/영화.png" alt="">
           </div>
           <div class="check_com">
             <div style="font-size: 18px; font-weight: 500;">영화를 선택하세요.<br><br></div>
@@ -173,7 +173,7 @@ $(function(){
           <!--아래는 영화 선택 목록-->
     <div class="ticket_check_box">
       <div class="movie_poster">
-        <img src="img/ticketing/영화.png" alt="">
+        <img src="../img/ticketing/영화.png" alt="">
       </div>
       <div class="check_com">
         <div style="font-size: 18px; font-weight: 500;">영화를 선택하세요.<br><br></div>
@@ -236,37 +236,37 @@ $(function(){
     </div>
   </div>
     <!--아래는 영화 선택 목록-->
-    <div class="ticket_check_box">
-      <div class="movie_poster">
-        <img src="img/ticketing/영화.png" alt="">
-      </div>
-      <div class="check_com">
-        <div style="font-size: 18px; font-weight: 500;">영화를 선택하세요.<br><br></div>
-        <div>영화관을 선택하세요.</div>
-        <div>영화일자를 선택하세요</div>
-      </div>
-      <div class="sit_price_total">
+<div class="ticket_check_box">
+        <div class="movie_poster">
+          <img src="../../img/ticketing/영화.png" alt="">
+        </div>
+        <div class="check_com">
+          <div style="font-size: 18px; font-weight: 500;">영화를 선택하세요.<br><br></div>
+          <div>영화관을 선택하세요.</div>
+          <div>영화일자를 선택하세요</div>
+        </div>
+        <div class="sit_price_total">
 
-        <div class="sit_price">
-          <div>
-            <div>성인(1)</div>
-            <div>예매수수료(1)</div>
+          <div class="sit_price">
+            <div>
+              <div>성인(1)</div>
+              <div>예매수수료(1)</div>
+            </div>
+            <div class="sit_price_num">
+              <div>13,000원</div>
+              <div>500원</div>
+            </div>
           </div>
-          <div class="sit_price_num">
-            <div>13,000원</div>
-            <div>500원</div>
+
+          <div class="sit_total">
+            <div>최종결제 금액</div>
+            <div class="sit_total_num"> 13,500&nbsp;원</div>
           </div>
         </div>
-
-        <div class="sit_total">
-          <div>최종결제 금액</div>
-          <div class="sit_total_num"> 13,500&nbsp;원</div>
+        <div class="sitting">
+          <a href="payment" class="sitting_check"><button class="btn btn-outline-danger">결제창으로 넘어가기</button></a>
         </div>
       </div>
-      <div class="sitting">
-        <a href="complete" class="sitting_check"><button class="btn btn-outline-danger" value="bank" style="padding: 15px 27px;font-size: 17px;">결제 하기</button></a>
-      </div>
-    </div>
   </div>
 <!-- 좌석선택끝 -->
   

@@ -206,7 +206,7 @@ a{
 .flip-card-back::before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;display:block;background:rgba(0,0,0,.7);z-index:1;}
 
 .flip-card .rl_info_box {position:absolute;top:0;bottom:0;left:0;right:0;padding:0px;z-index: 2;color:#fff;line-height:1;}
-.flip-card .rl_info_box .rank_num {margin-bottom:39px;font-size:24px;font-weight:bold;font-family:nanumEB,'맑은 고딕','Malgun Gothic','Helvetica','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif ;text-align: left; width:45px; height:40px; background:url(//movie-img.yes24.com/NYes24/new/all_sprite.png) no-repeat -493px -629px; padding:5px; text-align:center; letter-spacing:-1px;}
+.flip-card .rl_info_box .rank_num {color:white;margin-bottom:39px;font-size:24px;font-weight:bold;font-family:nanumEB,'맑은 고딕','Malgun Gothic','Helvetica','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif ;text-align: left; width:45px; height:40px; background:url(//movie-img.yes24.com/NYes24/new/all_sprite.png) no-repeat -493px -629px; padding:5px; text-align:center; letter-spacing:-1px;}
 .flip-card .rl_info_box .btn_rank_st {margin:0 0 5px 0;padding-top:15px;display:block;width:100px;height:45px;border:1px solid rgba(255,255,255,.6);font-size:14px;color:#fff;text-align: center;background:rgba(0,0,0,.4);}
 .flip-card .rl_info_box a.btn_rank_st:hover {color:#ec6159; border:1px solid #ec6159;}
 .flip-card .rl_info_box .rl_btn_box {position:absolute;top:50%;left:50%;transform: translate3d(-50%, -50%,0);}
