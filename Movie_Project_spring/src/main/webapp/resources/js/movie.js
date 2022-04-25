@@ -14,7 +14,6 @@ function movieprint(rank){
     			if(result!=null){
     			$(`#movie ${rank.movienum}`).text("");
     			}
-    			//Number()=실수,parseInt()=정수
     			//result값을 json에서 변경해온거 저렇게 쓰는구나! 템플릿리터널=$ !! `=백틱!   jsp입장에선$이엘문법임
     			/*그래서 js파일로 바꿔줘야지 백틱과 템플릿리터널을 인식함*/
     			//jsp는 서블릿으로 변환함

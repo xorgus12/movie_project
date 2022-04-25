@@ -1,15 +1,10 @@
 package kr.ac.kopo.movie_project.controller;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -90,7 +85,7 @@ public class RootController {
 	@SuppressWarnings("unchecked")
 	@ResponseBody
 	@PostMapping("/koficmovie")
-	public Object kobisMovie(@RequestBody Kofic item, HttpServletRequest request) throws OpenAPIFault, Exception {
+	public Object kobisMovie(@RequestBody Kofic item) throws OpenAPIFault, Exception {
 		String key="52ed877329884c9bcff27fca7daf01d0";
 		
 		Calendar cal = Calendar.getInstance();
@@ -106,8 +101,6 @@ public class RootController {
 
 		ObjectMapper mapper = new ObjectMapper();
 		HashMap<String,Object> data =mapper.readValue(daliydata,HashMap.class);
-		
-		request.setAttribute("dailyResult",data);
 		System.out.println("데이터"+data);
 		
 		HashMap<String,Object> boxOfficeResult=(HashMap<String, Object>) data.get("boxOfficeResult");
