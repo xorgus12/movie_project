@@ -2,18 +2,11 @@ package kr.ac.kopo.movie_project.model;
 
 public class Kofic {
 	private String rnum;//순번
-	private String movieCd;//영화 코드
 	private String rank;//영화 순위
 	private String rankInten;//전일대비 순위의 증감분을 출력합니다.
-	
-	private String movieNm;//영화 명
-	private String peopleNm;//감독+배우명
-	private String showTm;//상영시간
-	private String genreNm;//장르 명
-	private String watchGradeNm;//심의 등급
-	private String companyNm;//참여 영화사
-	
 	private String rankOldAndNew;//랭킹에 신규진입여부를 출력합니다.
+	private String movieCd;//영화 코드
+	private String movieNm;//영화 명
 	private String openDt;//영화의 개봉일을 출력합니다.
 	private String salesAmt	;//영화의 개봉일을 출력합니다.
 	private String salesShare;//해당일자 상영작의 매출총액 대비 해당 영화의 매출비율을 출력합니다.
@@ -26,7 +19,7 @@ public class Kofic {
 	private String audiAcc;//누적관객수를 출력합니다.
 	private String scrnCnt;//해당일자에 상영한 스크린수를 출력합니다.
 	private String showCnt;//해당일자에 상영된 횟수를 출력합니다.
-	
+	// 위 까지 일일 박스 오피스 아래부터 주석 달면서 주간 박스오피스등을 사용해주세요
 	public String getRnum() {
 		return rnum;
 	}
@@ -135,37 +128,7 @@ public class Kofic {
 	public void setMovieNm(String movieNm) {
 		this.movieNm = movieNm;
 	}
-	public String getPeopleNm() {
-		return peopleNm;
-	}
-	public void setPeopleNm(String peopleNm) {
-		this.peopleNm = peopleNm;
-	}
-	public String getShowTm() {
-		return showTm;
-	}
-	public void setShowTm(String showTm) {
-		this.showTm = showTm;
-	}
-	public String getGenreNm() {
-		return genreNm;
-	}
-	public void setGenreNm(String genreNm) {
-		this.genreNm = genreNm;
-	}
-	public String getWatchGradeNm() {
-		return watchGradeNm;
-	}
-	public void setWatchGradeNm(String watchGradeNm) {
-		this.watchGradeNm = watchGradeNm;
-	}
-	public String getCompanyNm() {
-		return companyNm;
-	}
-	public void setCompanyNm(String companyNm) {
-		this.companyNm = companyNm;
-	}
-	
+
 	
 	
 }

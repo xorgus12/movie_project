@@ -1,10 +1,9 @@
 package kr.ac.kopo.movie_project.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/ticket")
@@ -12,7 +11,8 @@ public class TicketController {
 	final String path = "ticket/";
 	
 	@RequestMapping("/Ticketing")
-	public String Ticketing() {
+	public String Ticketing(@RequestParam String ticdata) {
+		
 		return path+"Ticketing";
 	}
 	@RequestMapping("/TicketInformation")

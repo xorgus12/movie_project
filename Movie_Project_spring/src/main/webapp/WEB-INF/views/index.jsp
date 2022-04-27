@@ -6,11 +6,8 @@
     <jsp:include page="include/header.jsp"></jsp:include> 
     <link rel="stylesheet" href="css/style/style.css">
     <link rel="stylesheet" href="css/mainpage.css">
-    <script src="js/movie.js"></script>
-    <script> 
-    var rank={rank:10,rnum:4};//10개중 //2번
-    new movieprint(rank);
-    </script>
+    <script src="../js/movie.js"></script>
+    <script src="js/index.js"></script>
     <style>
     	.title_plus_text{
     	color:white}
@@ -75,23 +72,21 @@
     <div class="rank_view">
       <ul class="rank_list clear" style="list-style: none;">
             <li>
-              <div class="flip-card" id="M000126106">
+              <div class="flip-card" id="movie_data_1">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M06/M000126106_094624.jpg/dims/thumbnail/170x245/optimize"alt="문폴">
+                    <img src=""alt="">
                     <div class="rl_info_box">
-                      <p class="rank_num">1</p>
+                      <p class="rank_num"></p>
                     </div>
                   </div>
                   <div class="flip-card-back">
-                    <img
-                      src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M06/M000126106_094624.jpg/dims/thumbnail/170x245/optimize"
-                      alt="문폴">
+                    <img src="" alt="">
                     <div class="rl_info_box">
-                      <p class="rank_num">1</p>
+                      <p class="rank_num"></p>
                       <div class="rl_btn_box">
                         <a href="" class="btn_rank_st">예매</a>
-                        <a href="/MovieInfo/Index?mId=M000126106" class="btn_rank_st">정보</a>
+                        <a href="/MovieInfo/Index?mId=M000126106" class="btn_rank_st movie_datalink_1">정보</a>
                       </div>
                     </div>
                   </div>
@@ -100,21 +95,21 @@
             </li>
 
             <li>
-              <div class="flip-card">
+              <div class="flip-card" id="movie_data_2">
                   <div class="flip-card-inner">
                       <div class="flip-card-front">
-                          <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M72/M86/M000077286_103345.jpg/dims/thumbnail/170x245/optimize" alt="이상한 나라의 수학자">
+                          <img src="" alt="">
                           <div class="rl_info_box">
-                              <p class="rank_num">2</p>
+                              <p class="rank_num"></p>
                           </div>
                       </div>
                       <div class="flip-card-back">
-                          <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M72/M86/M000077286_103345.jpg/dims/thumbnail/170x245/optimize" alt="이상한 나라의 수학자">
+                         <img src="" alt="">
                           <div class="rl_info_box">
-                              <p class="rank_num">2</p>
+                              <p class="rank_num"></p>
                               <div class="rl_btn_box">
-                                      <a href="" class="btn_rank_st">예매</a>
-                                  <a href="/MovieInfo/Index?mId=M000077286" class="btn_rank_st">정보</a>
+                                      <a href="ticket/Ticketing" class="btn_rank_st">예매</a>
+                                  <a href="/MovieInfo/Index?mId=M000077286" class="btn_rank_st movie_datalink_2">정보</a>
                               </div>
                           </div>
                       </div>
@@ -122,21 +117,21 @@
               </div>
           </li>
           <li>
-            <div class="flip-card">
+              <div class="flip-card" id="movie_data_3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M60/M50/M00012605051_101632.jpg/dims/thumbnail/170x245/optimize" alt="더 배트맨">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">3</p>
+                            <p class="rank_num"></p>
                         </div>
                     </div>
                     <div class="flip-card-back">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M60/M50/M00012605051_101632.jpg/dims/thumbnail/170x245/optimize" alt="더 배트맨">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">3</p>
+                            <p class="rank_num"></p>
                             <div class="rl_btn_box">
                                     <a href="" class="btn_rank_st">예매</a>
-                                <a href="/MovieInfo/Index?mId=M000126050" class="btn_rank_st">정보</a>
+                                <a href="/MovieInfo/Index?mId=M000126050" class="btn_rank_st movie_datalink_3">정보</a>
                             </div>
                         </div>
                     </div>
@@ -144,21 +139,21 @@
             </div>
         </li>
         <li>
-            <div class="flip-card">
+              <div class="flip-card" id="movie_data_4">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M51/M000126151_161206.jpg/dims/thumbnail/170x245/optimize" alt="나의 히어로 아카데미아 더 무비: 월드 히어로즈 미션">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">4</p>
+                            <p class="rank_num"></p>
                         </div>
                     </div>
                     <div class="flip-card-back">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M61/M51/M000126151_161206.jpg/dims/thumbnail/170x245/optimize" alt="나의 히어로 아카데미아 더 무비: 월드 히어로즈 미션">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">4</p>
+                            <p class="rank_num"></p>
                             <div class="rl_btn_box">
-                                    <a href="" class="btn_rank_st">예매</a>
-                                <a href="/MovieInfo/Index?mId=M000126151" class="btn_rank_st">정보</a>
+                                    <a href="ticket/Ticketing" class="btn_rank_st">예매</a>
+                                <a href="/MovieInfo/Index?mId=M000126151" class="btn_rank_st movie_datalink_4">정보</a>
                             </div>
                         </div>
                     </div>
@@ -166,21 +161,21 @@
             </div>
         </li>
         <li>
-            <div class="flip-card">
+              <div class="flip-card" id="movie_data_5">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M53/M60/M000125360_095744.jpg/dims/thumbnail/170x245/optimize" alt="스펜서">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">5</p>
+                            <p class="rank_num"></p>
                         </div>
                     </div>
                     <div class="flip-card-back">
-                        <img src="https://movie-simg.yes24.com/NYes24//MOVIE//M53/M60/M000125360_095744.jpg/dims/thumbnail/170x245/optimize" alt="스펜서">
+                        <img src="" alt="">
                         <div class="rl_info_box">
-                            <p class="rank_num">5</p>
+                            <p class="rank_num"></p>
                             <div class="rl_btn_box">
                                     <a href="" class="btn_rank_st">예매</a>
-                                <a href="/MovieInfo/Index?mId=M000125360" class="btn_rank_st">정보</a>
+                                <a href="/MovieInfo/Index?mId=M000125360" class="btn_rank_st movie_datalink_5">정보</a>
                             </div>
                         </div>
                     </div>
