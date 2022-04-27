@@ -6,41 +6,12 @@
 <head>
 <meta charset="UTF-8">
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/event.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../css/style/style.css">
+    <link rel="stylesheet" href="../../resources/css/style/style.css">
+    <link rel="stylesheet" href="../../resources/css/event/continue_event.css">
+    <link rel="javascript" href="js/mainpage.js">
+
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    $(function(){
-      const con = ".scriptbox";
-      const con2 =".scriptbox2";
-      const info =".end_event";
-      const info4 =".ing_event_2";
-      const info2 =".ing_event";
-
-
-
-      $(".end_event").click(function() { 
-      $(con).css('display', 'none');
-      $(con2).css('display', 'block');
-      });
-
-      $(info2).click(function() { 
-      $(con).css('display', 'block');
-      $(con2).css('display', 'none');
-      });
-      
-      $(".information_cancel_copy").click(function() { 
-      $(con).css('display', 'none');
-      $(con2).css('display', 'block');
-      });
-
-      $(info4).click(function() { 
-      $(con).css('display', 'block');
-      $(con2).css('display', 'none');
-      });
-    });
-  </script>
 
 </head>
 <body>
@@ -48,15 +19,15 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../../resources/img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <a href="such"><img src="../../resources/img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
 	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
-	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
-	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="../login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="../logout">로그아웃</a></div></c:if>
 	            </div>
 	            <c:if test="${sessionScope.member.grade==1}">
 	             <div class="title_plus_text">${sessionScope.member.userName} 사용자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="myPage">마이페이지</a></div>
@@ -91,9 +62,10 @@
             </ul>
   </div>
   <!--여기까지 기본 위 배너 입니다!-->
+     <!--여기까지 기본 위 배너 입니다!-->
      <div class="whitebox">
       <div class="eventbox">
-        <div class="eventboxtext">이벤트</div>
+        <div class="eventboxtext"> 진행중인 이벤트</div>
       </div>
 
       <!-- 아래가 슬라이드 부분입니다 건들지마세요 -->
@@ -126,95 +98,85 @@
  <!-- 현재 진행중인 이벤트 -->
 <div class="whitebox2">
       <div class="scriptbox">
-
-      <div class="ing_end_event_box">
-        <div class="ing_event">
-          <span class="ing_event_text">현재 진행중인 이벤트</span>
-        </div>
-        <div class="end_event">
-          <span class="end_event_text">종료된 이벤트</span>
-        </div>
-      </div>
-
      
       <div class="event_list_box">
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
 
         <div class="evnet_list_text_box">
-          <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
+          <a href="EventInfo"><div class="event_list_img" style="background-image: url(../../resources/img/eventphoto/테스트용사진\ 가로사진.jpg);"></div></a>
           <div class="event_list_text">
-            <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
+            <a href="EventInfo"><span class="event_list_title">제목을 입력하세요</span></a>
             <span class="event_list_date">2022.04.05</span>
           </div>
         </div>
@@ -245,128 +207,6 @@
       </div>
 
      </div>
-    
-<!-- 현재 진행중인 이벤트 끝끝 -->
-
-
-<!-- 종료된이벤트 -->
-<div class="scriptbox2">
-  <div class="ing_end_event_box">
-    <div class="ing_event_2">
-      <span class="ing_event_text_2">현재 진행중인 이벤트</span>
-    </div>
-    <div class="end_event">
-      <span class="end_event_text_2">종료된 이벤트</span>
-    </div>
-  </div>
-
-  <div class="event_list_box">
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">종료된이벤트페이지</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-
-    <div class="evnet_list_text_box">
-      <a href=""><div class="event_list_img" style="background-image: url(img/이벤트사진/테스트용사진\ 가로사진.jpg);"></div></a>
-      <div class="event_list_text">
-        <a href=""><span class="event_list_title">제목을 입력하세요</span></a>
-        <span class="event_list_date">2022.04.05</span>
-      </div>
-    </div>
-  </div>
-  <!-- 종료된이벤트 -->
-
-
-  <div class="pager ">
-    <div class="page_wrap">
-      <div class="page_nation">
-         <a class="arrow pprev" href="#"></a>
-         <a class="arrow prev" href="#"></a>
-         <a href="#" class="active">1</a>
-         <a href="#">2</a>
-         <a href="#">3</a>
-         <a href="#">4</a>
-         <a href="#">5</a>
-         <a href="#">6</a>
-         <a href="#">7</a>
-         <a href="#">8</a>
-         <a href="#">9</a>
-         <a href="#">10</a>
-         <a class="arrow next" href="#"></a>
-         <a class="arrow nnext" href="#"></a>
-      </div>
-   </div>
-  </div>
-
- </div>
 
 
 

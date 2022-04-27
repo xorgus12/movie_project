@@ -191,17 +191,21 @@
 
   <div class="event_box">
     <!-- 박스 모양 ↑ -->
-    <div class="highbox">
-    <div>
+   
+ 
         <div class="event_event">이벤트</div>   <!-- 18px맞춤 -->
-    </div>
-   <a href="event/continue_Event"> <div class="event_most">더보기-></div></a>
-    <hr class="event_border" style="border: solid 1px #666666;" width="1000px">
-    <a href=""> <div class="event_ticket">
-       <div class="event_ticket_letter">티켓 이벤트</div>
+   
+   <!-- <a href=""> <div class="event_most">더보기-></div></a> -->
+    <hr class="event_border" style="border: solid 1px #666666;" width="450px">
+    <hr class="event_border3" style="border: solid 1px #666666;" width="450px"  style="position: relative;" >
+    <div class="event_event2">상영중인영화</div>
+    
+    <div class="highbox">
+    <a href="event/continue_Event"> <div class="event_ticket">
+       <div class="event_ticket_letter">진행중인 이벤트</div>
     </div></a>
-    <a href="event/continue_Event"> <div class="event_ing">
-        <div class="event_ticket_letter2">진행중인 이벤트</div>
+    <a href="movie_info/NowPlayRank"> <div class="event_ing">
+        <div class="event_ticket_letter2">현재 상영중인 영화</div>
     </div></a>
   </div>
     <!-- 공지사항(announcement),자주묻는질문 -->
@@ -236,9 +240,9 @@
     <!-- 영화순위,예매,고객센터,마이페이지 -->
     <div class="Box_tool">
        <a href="movie_info/MovieRank">  <div class="movie_ranking"></div> </a>
-       <a href="ticket/Ticketing">  <div class="ticketing"></div> </a> 
-       <a href="serviceCenter/CenterService">  <div class="service_center"></div> </a> 
-       <a href="myPage/myPage">  <div class="mypage"></div> </a> 
+       <a href="">  <div class="ticketing"></div> </a> 
+       <a href="">  <div class="service_center"></div> </a> 
+       <a href="">  <div class="mypage"></div> </a> 
 
     </div>
     
@@ -259,6 +263,8 @@
       <div class="bottom_text_4">© ProjectCinema Co., Ltd All rights reservedv.</div>
     </div>
     </div>
-<jsp:include page="include/body.jsp"></jsp:include>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
 </body>
 </html>
