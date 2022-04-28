@@ -16,7 +16,7 @@ import kr.ac.kopo.movie_project.service.MemberService;
 @Controller
 public class RootController {
 	final String path="login/";
-	
+
 	@Autowired
 	MemberService memberservice;
 	
