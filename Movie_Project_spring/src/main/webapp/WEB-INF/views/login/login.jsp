@@ -5,16 +5,16 @@
 <html>
 <head>
 
-<link href="../../resources/css/login/login.css" rel="stylesheet" type="text/css">
+<link href="../css/login/login.css" rel="stylesheet" type="text/css">
  <jsp:include page="../include/header.jsp"></jsp:include>
  
- 	<link rel="stylesheet" href="../../resources/css/style/style.css">
+ 	<link rel="stylesheet" href="../css/style/style.css">
 </head>
 <body>
   <div class="box_case">
     <!--좌우크기조절-->
     <div class="title">
-      <a href="../../../../" class="main_back">
+      <a href="../../../../" class="main_back" style="display: flex;">
         <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
@@ -90,8 +90,8 @@
               <form id="login_form" method="post">
                 <section class="Easy-sgin-in-wrap">
                     <ul class="sign-a-list">
-                        <li class="na"><a href="#"><img src="img/login/kakao.png" alt="카카오" style="height: 45px; width: 45px;" /><i class="fas fa-kakaocorp"></i><span>카카오톡 계정으로 로그인</span></a></li>
-                        <li class="ka"><a href="#"><img src="img/login/naver.png" class="naver_img"alt="네이버" style="height: 45px; width: 45px;"><i class="fab fa-facebook-square"></i><span>네이버 계정으로 로그인</span></a></li>                        
+                        <li class="ka"><a href="#"><img src="img/login/kakao.png" alt="카카오" style="height: 45px; width: 45px;" /><i class="fas fa-kakaocorp"></i><span>카카오톡 계정으로 로그인</span></a></li>
+                        <li class="na"><a href="#"><img src="img/login/naver.png" class="naver_img"alt="네이버" style="height: 45px; width: 45px;"><i class="fab fa-facebook-square"></i><span>네이버 계정으로 로그인</span></a></li>                        
                     </ul>
                     
                 </section>

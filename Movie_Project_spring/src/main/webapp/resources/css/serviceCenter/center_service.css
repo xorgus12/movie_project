@@ -156,7 +156,7 @@ padding: 2em 12em;
 .faq_table td{
   padding: 4px 0;
   padding-left: 30px;
-  height: 40px;
+  height: 49px;
   border-bottom: 1px solid #e5e5e5;
   vertical-align: middle;
   line-height: 20px;
@@ -182,7 +182,7 @@ padding: 2em 12em;
 
 .p_title{
     position: relative;
-    margin: 20px 0 20px;
+    margin: 15px 0 20px;
     font-size: 20px;
     font-weight: 600;
     color: #2b2b2b;
@@ -268,7 +268,7 @@ padding: 2em 12em;
   position: relative;
     padding-top: 15px;
     display: flex;
-    padding-left: 60px;
+    padding-left: 64px;
     height: 100%;
 }
 .sub_box_menu{
@@ -282,29 +282,20 @@ padding: 2em 12em;
   left: 130px;
   left: 150px;
   float: left;
-  width: 180px;
-  height: 180px;
-  background-image: url(../img/center_service/planning.png);
-}
-
-
-.sub_box1{
-  position: relative;
-  left: 250px;
-  float: left;
-  top: 25px;
   width: 140px;
-  height: 140px;
-  background-image: url(../img/center_service/faq.png);
+  height: 110px;
+  background-image: url(/img/center_service/planning.png);
 }
+
+
 
 .sub_box2{
   position: relative;
-  left: 330px;
+  left: 550px;
   float: left;
-  width: 180px;
-  height: 180px;
-  background-image: url(../img/center_service/inquirys.png);
+  width: 90px;
+  height: 90px;
+  background-image: url(/img/center_service/faq.png);
 }
 
 

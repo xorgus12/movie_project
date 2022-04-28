@@ -1,6 +1,5 @@
 package kr.ac.kopo.movie_project.controller;
 
-
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,19 +21,21 @@ public class RootController {
 	MemberService memberservice;
 	
 	@RequestMapping("/")
-	public String index(Member member, HttpSession session){
+	public String index(Member member, HttpSession session) {
 		if(session.getAttribute("member")==null) {
 			member.setGrade(0);
 			session.setAttribute("member",member);
 			}
-
 		return "index";
 	}
 	
 	@GetMapping("/login")
 	public String login() {
 		return path+"login"; 
-	}
+		}
+	
+	
+	
 	@PostMapping("/login")
 	public String login(Member member,HttpSession session) {
 		if(memberservice.login(member)) {
@@ -42,7 +43,7 @@ public class RootController {
 			String target=(String) session.getAttribute("target");
 			return "redirect:"+(target==null?"/":target);
 		}
-		System.out.println("실패");
+		System.out.println("�떎�뙣");
 		return "redirect:login";
 	}
 
@@ -54,7 +55,7 @@ public class RootController {
 	@PostMapping("/signup")
 	public String signup(Member member,RedirectAttributes ra) {
 		memberservice.add(member);
-		ra.addFlashAttribute("msg", "회원가입이 완료 되었습니다");
+		ra.addFlashAttribute("msg", "�쉶�썝媛��엯�씠 �셿猷� �릺�뿀�뒿�땲�떎");
 		return "redirect:.";
 	}
 	@ResponseBody
@@ -71,5 +72,13 @@ public class RootController {
 		session.invalidate();
 		return "redirect:.";
 	}
+	
+	@GetMapping("/findid")
+	public String findid() {
+		return "findid";
+	}
+	
+	
+		
 }
 

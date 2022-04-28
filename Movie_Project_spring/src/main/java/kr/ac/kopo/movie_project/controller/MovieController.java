@@ -31,13 +31,11 @@ import kr.or.kobis.kobisopenapi.consumer.rest.KobisOpenAPIRestService;
 import kr.or.kobis.kobisopenapi.consumer.rest.exception.OpenAPIFault;
 @Controller
 public class MovieController {
-	//dtrtststf
 	@SuppressWarnings("unchecked")
 	@ResponseBody
 	@PostMapping("/koficmovie")
 	public Object kobisMovie(@RequestBody Kofic item) throws OpenAPIFault, Exception{
 		String key="52ed877329884c9bcff27fca7daf01d0";
-		
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		cal.add(Calendar.DATE, -1);

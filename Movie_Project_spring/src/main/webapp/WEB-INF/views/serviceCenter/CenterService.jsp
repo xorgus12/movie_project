@@ -5,7 +5,7 @@
 <html>
 <head>
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/center_service.css" rel="stylesheet" type="text/css">
+<link href="../css/serviceCenter/center_service.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../css/style/style.css">
 </head>
 <body>
@@ -13,14 +13,14 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <a href="such"><img src="../img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
 	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
-	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="/login">로그인</a></div></c:if>
 	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
 	            </div>
 	            <c:if test="${sessionScope.member.grade==1}">
@@ -60,7 +60,7 @@
       <div class="center_seq">고객 센터</div>     
         <div class="fqa_top_area">
           <div class="fqa_top_cont">
-              <p class="p_title"><a href="faq.html" class="btn_more">FAQ TOP 5(바로 가기)</a></p>
+              <p class="p_title"><a href="F&Q" class="btn_more">FAQ TOP 5(바로 가기)</a></p>
               <div class="faq_box">
                               <div class="">
                                 <table class="faq_table">
@@ -105,14 +105,14 @@
               </div>
               <div class="faq_center">
                   
-                  <a href="#" target="_blank" class="inquiry"><img src="img/center_service/inquiry.png" alt="1:1문의" style="height: 25px; width: 25px;" style="right: 10%;"/>1:1 문의</a>
+                  <a href="#" target="_blank" class="inquiry">질문게시판</a>
                   
               </div>
           </div>
       </div>
       <div class="faq_notice_area">
           <div class="notice_board">
-            <p class="p_title2"><a href="notice.html" class="btn_more">공지사항(바로 가기)</a></p>
+            <p class="p_title2"><a href="NoticeView" class="btn_more">공지사항(바로 가기)</a></p>
             <div class="faq_box">
                             <div class="">
                               <table class="faq_table">
@@ -143,9 +143,9 @@
 
     </div>
     <div class="sub_box_menu">
-      <a href="notice.html">  <div class="sub_box"></div> </a>
-      <a href="faq.html">  <div class="sub_box1"></div> </a> 
-      <a href="">  <div class="sub_box2"></div> </a>      
+      <div class="sub_box"><a href="notice.html"></a></div> 
+       <div class="sub_box1"><a href="faq.html"></a></div> 
+      <div class="sub_box2"> <a href=""></a></div>      
    </div>
     </div>
   
