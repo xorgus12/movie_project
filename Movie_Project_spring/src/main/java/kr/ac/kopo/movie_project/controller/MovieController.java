@@ -31,7 +31,7 @@ import kr.or.kobis.kobisopenapi.consumer.rest.KobisOpenAPIRestService;
 import kr.or.kobis.kobisopenapi.consumer.rest.exception.OpenAPIFault;
 @Controller
 public class MovieController {
-	
+	//dtrtststf
 	@SuppressWarnings("unchecked")
 	@ResponseBody
 	@PostMapping("/koficmovie")
