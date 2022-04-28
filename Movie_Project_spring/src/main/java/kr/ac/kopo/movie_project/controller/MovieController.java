@@ -63,8 +63,8 @@ public class MovieController {
       //      System.out.println(dailyBoxOfficeList.get(resultnum)+"범위 안벗어남..");
       return dailyBoxOfficeList.get(resultnum);
    }
-  
-    @SuppressWarnings("unchecked")
+
+   @SuppressWarnings("unchecked")
    @ResponseBody
    @PostMapping("/navermovie")
    public Object naverMovie(@RequestBody Kofic moviedata) throws JsonMappingException, JsonProcessingException {
@@ -155,7 +155,6 @@ public class MovieController {
          SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
          cal.add(Calendar.DATE, -1);
          String date = sdf.format(cal.getTime());
-         
          
          String itemPerPage=item.getRank();
          
