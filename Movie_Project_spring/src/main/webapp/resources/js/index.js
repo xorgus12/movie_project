@@ -1,7 +1,7 @@
 
 $(function(){
-	for(i=1;i<5;i++){
-	var rank={rank:10,rnum:i};//10개중 //2번
+	//for(i=1;i<5;i++){
+	var rank={rank:10,rnum:1};//10개중 //2번
 	$.ajax({
     		url:"/koficmovie",
     		method: "POST",
@@ -38,12 +38,8 @@ $(function(){
 //ajax이 끝나고,,
 
 
-//	if(false){
-//	   $(`movie_data_${result.rank}>div>div>div>p`).text(`${result.rank}`);
-//	   $(`movie_data_${result.rank}>div>div>img`).attr("alt",`${result.rank}`);
-//?ticdata=${}
-//    }
 
-}
+
+//}
 //반복문이 끝나고,,
 })
