@@ -147,7 +147,7 @@ padding: 2em 12em;
 .gray_main{
   width: 100%;
   height: 1500px;
-  background-color: #dddddd;
+  background-color: whitesmoke;
 }
 
 
@@ -163,7 +163,7 @@ padding: 2em 12em;
     position: relative;
     width: 1000px;
     height: 120px;  
-    background-color: #dddddd;
+    background-color: whitesmoke;
 }
 .whitebox_info_text{
   position: relative;
@@ -245,7 +245,7 @@ padding: 2em 12em;
   position: relative;
   width: 1000px;
   height: 130px;
-  background-color: #dddddd;
+  background-color:whitesmoke;
 }
 
 

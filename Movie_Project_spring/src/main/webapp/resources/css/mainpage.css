@@ -271,26 +271,43 @@ a{
 }
 .highbox{
   position: relative;
-  height: 365px;
+  height: 315px;
   width: 1000px;
-  top: 20px;
+  top: -13px
 }
 .event_event{
-  float: left;
+  position: relative;
+  /* float: left; */
   font-weight: 700;
+  width: 50px;
+  top: 10px;
+  
 }
 .event_most{
   display: inline-block;
   color: #666666;
   position:absolute;
   font-size: 12px;
-  left:900px;
+  left:405px;
   top:15px
 }
 .event_border{
   display: inline-block;
   top: 30px;
   bottom: 55px; 
+}
+.event_border3{
+  position: relative;
+  top: -7px;
+  left: 525px;
+}
+.event_event2{
+  position: relative;
+  top: -38px;
+  width: 95px;
+  height: 25px;
+  left: 530px;
+  font-weight: 550;
 }
 .event_ticket{
   float: left;

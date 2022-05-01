@@ -5,8 +5,8 @@
 <html>
 <head>
  <jsp:include page="../include/header.jsp"></jsp:include>
-<link href="../css/movierank.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../css/style/style.css">
+    <link rel="stylesheet" href="../../resources/css/style/style.css">
+    <link rel="stylesheet" href="../../resources/css/movie_info/movierank.css">
 
 </head>
 <body>
@@ -14,15 +14,15 @@
     <!--좌우크기조절-->
     <div class="title">
       <a href="../../../../" class="main_back">
-        <img src="img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
+        <img src="../../resources/img/root/메인아이콘_흰.jpg" alt="메인아이콘" />
         <div class="title_name">Miner Cinema</div>
       </a>
     </div>
 <div class="title_right">
-	                <a href="such"><img src="img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
+	                <a href="such"><img src="../../resources/img/root/돋보기화이트.jpg" alt="돋보기아이콘" style="height: 22px; width: 25px;" /></a>
 	                <div class="login_link"><a href="serviceCenter/CenterService" >고객센터</a></div>
-	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="login">로그인</a></div></c:if>
-	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="logout">로그아웃</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade==0}">	<div class="login_link"><a href="../login">로그인</a></div></c:if>
+	              	<c:if test="${sessionScope.member.grade>0}">	<div class="login_link"><a href="../logout">로그아웃</a></div></c:if>
 	            </div>
 	            <c:if test="${sessionScope.member.grade==1}">
 	             <div class="title_plus_text">${sessionScope.member.userName} 사용자님 안녕하세요&nbsp;&nbsp;&nbsp; <a href="myPage">마이페이지</a></div>
@@ -75,7 +75,7 @@
             </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/뜨거운피 포스터.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -99,7 +99,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -122,7 +122,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -143,7 +143,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -165,7 +165,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -186,7 +186,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -207,7 +207,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -228,7 +228,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -249,7 +249,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -270,7 +270,7 @@
           </div>
           <div class="moviephoto">
           <div class="container">
-            <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+            <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
             <div class="textbox">
               <button class="text">예매</button>
               <button class="text1">정보</button>
@@ -293,7 +293,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -315,7 +315,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -338,7 +338,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -360,7 +360,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -382,7 +382,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
@@ -403,7 +403,7 @@
               </div>
               <div class="moviephoto">
               <div class="container">
-                <img src="img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
+                <img src="../../resources/img/poster/이상한나라의수학자.jfif" alt="Picsum" class="image" style="width:100%">
                 <div class="textbox">
                   <button class="text">예매</button>
                   <button class="text1">정보</button>
