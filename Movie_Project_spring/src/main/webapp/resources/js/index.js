@@ -6,7 +6,8 @@ $(function(){
           url:"/koficmovie",
           method: "POST",
           contentType: "application/json",
-          dataType: "json",//json으로 받은데이터
+          //json으로 받은데이터
+          dataType: "json",
           data: JSON.stringify(rank),
                  //서버로 보내는 데이터 타입
           success: result => {

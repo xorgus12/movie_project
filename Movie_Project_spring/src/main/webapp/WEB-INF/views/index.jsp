@@ -6,8 +6,8 @@
     <jsp:include page="include/header.jsp"></jsp:include> 
     <link rel="stylesheet" href="css/style/style.css">
     <link rel="stylesheet" href="css/mainpage.css">
-    <script src="../js/movie.js"></script>
     <script src="js/index.js"></script>
+    
     <style>
        .title_plus_text{
        color:white}

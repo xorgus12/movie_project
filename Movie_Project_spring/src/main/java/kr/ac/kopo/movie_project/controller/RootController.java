@@ -75,7 +75,7 @@ public class RootController {
 	
 	@GetMapping("/findid")
 	public String findid() {
-		return "findid";
+		return path+"findid";
 	}
 	
 	

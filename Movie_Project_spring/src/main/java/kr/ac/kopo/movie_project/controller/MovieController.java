@@ -150,7 +150,7 @@ public class MovieController {
       @SuppressWarnings("unchecked")
        private HashMap<String,Object> listdata(Kofic item) throws OpenAPIFault, Exception{
           String key="52ed877329884c9bcff27fca7daf01d0";
-         
+
          Calendar cal = Calendar.getInstance();
          SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
          cal.add(Calendar.DATE, -1);
