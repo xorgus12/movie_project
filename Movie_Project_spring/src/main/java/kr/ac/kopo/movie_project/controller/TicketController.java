@@ -11,7 +11,7 @@ public class TicketController {
 	final String path = "ticket/";
 	
 	@RequestMapping("/Ticketing")
-	public String Ticketing(@RequestParam String ticdata) {
+	public String Ticketing() {
 		
 		return path+"Ticketing";
 	}
