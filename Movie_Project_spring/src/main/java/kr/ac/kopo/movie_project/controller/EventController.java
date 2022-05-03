@@ -22,4 +22,9 @@ public class EventController {
 	public String EventInfo() {
 		return path+"EventInfo";
 	}
+	
+	@GetMapping("/NoticeEventAdd")
+	public String NoticeEventAdd() {
+		return path+"NoticeEventAdd";
+	}
 }
